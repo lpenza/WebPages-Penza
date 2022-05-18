@@ -43,8 +43,16 @@ header {
 .imgRedes img {
     margin: 0.5rem;
     width: 25px;
+    
 }
 
+.imgRedes a img{
+    transform: scale(1);
+}
+
+.imgRedes a img:hover {
+    transform: scale(1.2);
+}
 
 /* logo */
 .logo {
