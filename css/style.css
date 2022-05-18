@@ -45,6 +45,13 @@ header {
     width: 25px;
 }
 
+.imgRedes a img{
+    transform: scale(1);
+}
+
+.imgRedes a img:hover {
+    transform: scale(1.2);
+}
 
 /* logo */
 .logo {
