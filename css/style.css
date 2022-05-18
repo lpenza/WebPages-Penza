@@ -51,7 +51,11 @@ header {
 }
 
 .imgRedes a img:hover {
+<<<<<<< HEAD
     transform: scale(1.2);
+=======
+    transform: scale(1.1);
+>>>>>>> otraRama
 }
 
 /* logo */
