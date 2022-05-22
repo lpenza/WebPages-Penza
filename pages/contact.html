@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link BT -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- Link CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Google Fonts -->
@@ -20,97 +23,104 @@
 <body>
     <div class="contenedorContact">
         <header>
-            <!-- Logo y buscador -->
-            <a href="../index.html"><img src="../img/logo.jpg" alt="Home" class="logo" /></a>
-            <div class="buscador">
-                <input type="text" placeholder="Search" class="buscador">
-                <img src="../img/search.png" alt="Search" class="lupa">
-                <!-- Fin Logo y Buscador -->
-            </div>
-            <div class="nav">
-                <!-- Menu -->
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="../index.html">HOME</a>
-                        </li>
-                        <li>
-                            <a href="service.html">SERVICE</a>
-                        </li>
-                        <li>
-                            <a href="about.html">ABOUT</a>
-                        </li>
-                        <li>
-                            <a href="customer.html">CUSTOMERS</a>
-                        </li>
-                        <li>
-                            <!-- <a href="pages/contact.html">CONTACT</a> -->
-                        </li>
-                    </ul>
-                </nav>
-                <!-- Fin Menu -->
-                <!-- Combo Lenguaje -->
-                <select name="" class="idioma">
-                    <option value="ES">Es</option>
-                    <option value="EN">En</option>
-                </select>
-                <!-- Fin Combo Lenguaje -->
-            </div>
-    
+            <!-- Menu -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                    <!-- Logo -->
+                    <a href="../index.html" class="logo">LOGO</a>
+                    <!-- termina logo -->
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="service.html">SERVICIOS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="about.html">NOSOTROS</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="customer.html">CLIENTES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-current="page" href="contact.html">CONTACTO</a>
+                            </li>
+                            <li>
+                                <!-- Contacto -->
+                                <div class="imgRedes">
+                                    <a href="https://www.whatsapp.com/?lang=es" target="_blank" class="imgWpp"><img
+                                            src="../img/whatsapp.png" alt="Whatsapp" /></a>
+                                    <a href="https://www.facebook.com/" target="_blank"><img src="../img/facebook.png"
+                                            alt="Facebook" /></a>
+                                    <a href="https://www.instagram.com/" target="_blank"><img src="../img/instagram.png"
+                                            alt="Instagram" /></a>
+                                </div>
+                                <!--Termina contacto-->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- Fin Menu -->
         </header>
-        <!-- Inicio Form -->
-        <form class="form">
-            <fieldset>
-                <legend class="formCamp">TELL US YOUR IDEA</legend>
-                <div class="formCamp">
-                    <label for="name">Full Name</label>
-                    <input type="text" name="name">
-                </div>
-                <div class="formCamp">
-                    <label for="email">Email</label>
-                    <input type="email" name="email">
-                </div>
-                <div class="formCamp">
-                    <label for="number">Contact Number</label>
-                    <input type="tel" name="number">
-                </div>
-                <div class="formCamp">
-                    <label for="commentary">Commentary</label>
-                    <textarea name="Commentary" id="" cols="30" rows="10"></textarea>
-                </div>
-                <div class="formCamp">
-                    <label for="country">Country</label>
-                    <select name="country" class="selectPais">
-                        <option value="pais">Argentina</option>
-                        <option value="pais">Uruguay</option>
-                        <option value="pais">Mexico</option>
-                        <option value="pais">US</option>
-                        <option value="pais">Spain</option>
-                        <option value="pais">Other</option>
-                    </select>
-                </div>
-                <div class="formBotones">
-                    <input type="submit" value="Send">
-                    <input type="reset" value="Clean Form">
-                </div>
-    
-            </fieldset>
-        </form>
-        <!-- Fin Form -->
-       <!-- Comienza Footer -->
-       <footer>
-        <div class="link">
-            <h3 class="by">Designed BY</h3>
-            <a href="http://linkedin.com/in/lucio-penza-835747133" target="_blank"><img src="../img/linkedin.png"
-                    alt="Linkedin" class="linkedin" /></a>
-        </div>
-    
-        <h3 class="copy">Copyright (c) 2003 Company NameAll Rights Reserved.</h3>
-    </footer>
-    <!-- Termina Footer -->
-    </div>
-    
+        <main>
+            <!-- Inicio Form -->
+            <form class="container-fluid">
+                <fieldset class="row">
+                    <legend class="formCamp col-10">CONTANOS TU IDEA</legend>
+                    <div class="formCamp row">
+                        <label for="name" class="col-3">NOMBRE</label>
+                        <input type="text" name="name" class="col-sm-10 col-md-11 col-lg-9">
+                    </div>
+                    <div class="formCamp row">
+                        <label for="email" class="col-3">EMAIL</label>
+                        <input type="email" name="email" class="col-sm-10 col-md-11 col-lg-9">
+                    </div>
+                    <div class="formCamp row">
+                        <label for="number" class="col-3">CELULAR</label>
+                        <input type="tel" name="number" class="col-sm-10 col-md-11 col-lg-9">
+                    </div>
+                    <div class="formCamp row">
+                        <label for="country" class="col-3">PAIS</label>
+                        <select name="country" class="selectPais col-sm-10 col-md-11 col-lg-9">
+                            <option value="pais">Otro</option>
+                            <option value="pais">Argentina</option>
+                            <option value="pais">Mexico</option>
+                            <option value="pais">US</option>
+                            <option value="pais">Spain</option>
+                            <option value="pais">Uruguay</option>
+                        </select>
+                    </div>
+                    <div class="formCamp row">
+                        <label for="commentary" class="col-3">COMENTARIO</label>
+                        <textarea name="Commentary" id="" cols="30" rows="6"
+                            class="col-sm-10 col-md-11 col-lg-9"></textarea>
+                    </div>
+                    <div class="formBotones row">
+                        <input type="submit" value="Send" class="col-sm-11 col-md-4 col-lg-3 col-xl-4">
+                        <input type="reset" value="Clean Form" class="col-sm-11 col-md-7 col-lg-6 col-xl-5">
+                    </div>
 
+                </fieldset>
+            </form>
+            <!-- Fin Form -->
+        </main>
+        <!-- Comienza Footer -->
+        <footer>
+            <div class="link">
+                <a href="http://linkedin.com/in/lucio-penza-835747133" target="_blank">BY : <SPAn>Lucio Penza</SPAn></a>
+            </div>
+            <h3 class="copy">Copyright (c) 2003 Company NameAll Rights Reserved.</h3>
+        </footer>
+        <!-- Termina Footer -->
+    </div>
+    <!-- BT JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
