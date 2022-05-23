@@ -1,0 +1,74 @@
+[33mcommit d199cf7c41b90124062d9311238804f3ba87b69f[m[33m ([m[1;36mHEAD -> [m[1;32motraRama[m[33m)[m
+Merge: e701118 9067820
+Author: lpenza <105391483+lpenza@users.noreply.github.com>
+Date:   Sun May 22 22:34:34 2022 -0300
+
+    Merge branch 'master' into otraRama
+
+[33mcommit e7011182ae26ce8ee3340d85479131a5d05bf844[m[33m ([m[1;31morigin/otraRama[m[33m)[m
+Author: lpenza <105391483+lpenza@users.noreply.github.com>
+Date:   Sun May 22 22:28:46 2022 -0300
+
+    Video de Fondo
+
+[33mcommit 906782073e442ff1b4b83c24128233032587512f[m[33m ([m[1;31morigin/master[m[33m, [m[1;32mmaster[m[33m)[m
+Merge: 485fbf8 972f662
+Author: lpenza <105391483+lpenza@users.noreply.github.com>
+Date:   Sun May 22 21:18:46 2022 -0300
+
+    Agregado de bt a Master
+
+[33mcommit 972f662321a08fdb9d1c6d2e15ad3a535691c65d[m
+Author: lpenza <105391483+lpenza@users.noreply.github.com>
+Date:   Sun May 22 21:13:25 2022 -0300
+
+    Agregado de fonts a contac
+
+[33mcommit 81ffea50ca21ea5c5c9f1157a159f1a1e7e98755[m
+Author: lpenza <105391483+lpenza@users.noreply.github.com>
+Date:   Sun May 22 21:02:20 2022 -0300
+
+    Correccion enlaces Home
+
+[33mcommit 81ce1748e2e4de8bea83aac3970df80e2ee07e71[m
+Author: lpenza <105391483+lpenza@users.noreply.github.com>
+Date:   Sun May 22 20:49:24 2022 -0300
+
+    Aplicacion BT en Contact y Menu en todos los html
+
+[33mcommit 485fbf8cd9cff691cd16a754d61a81365f926f77[m
+Author: lpenza <105391483+lpenza@users.noreply.github.com>
+Date:   Tue May 17 21:54:49 2022 -0300
+
+    Otro Commit
+
+[33mcommit af1e54ff46f14c32c567c49830956c6cce4a9fc3[m
+Merge: ccb13dc 54a2737
+Author: lpenza <105391483+lpenza@users.noreply.github.com>
+Date:   Tue May 17 21:51:47 2022 -0300
+
+    Otro Commit
+
+[33mcommit 54a27372840e7df0a64e4f3e83a6ddacebc49c35[m
+Author: lpenza <105391483+lpenza@users.noreply.github.com>
+Date:   Tue May 17 21:49:47 2022 -0300
+
+    Cambio animacion
+
+[33mcommit eca687860d3b84e6f3a4e86fbfd896216ce0e19a[m
+Author: lpenza <105391483+lpenza@users.noreply.github.com>
+Date:   Tue May 17 21:41:43 2022 -0300
+
+    Agregado de animacion
+
+[33mcommit ccb13dc642cf02a9c3da54f47f1fe5289eda1fa6[m
+Author: lpenza <105391483+lpenza@users.noreply.github.com>
+Date:   Tue May 17 21:36:31 2022 -0300
+
+    Segundo commit con Merge
+
+[33mcommit 019120a480c9163db38efa317c43742eda79926a[m
+Author: lpenza <105391483+lpenza@users.noreply.github.com>
+Date:   Tue May 17 21:14:01 2022 -0300
+
+    Primer Commit
