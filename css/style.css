@@ -8,6 +8,8 @@
 
 /* contenedorHome */
 .contenedorHome {
+    position: relative;
+    z-index: 2;
     display: grid;
     grid-template-areas: "header"
         "contenedorHome"
@@ -243,16 +245,46 @@ footer {
 /* about */
 
 
+.mainAbout,.mainHome{
+    min-height: 100vh;
+    position: relative;
+
+}
+
 .contenedorAbout {
+   
+    position: relative;
+    z-index: 2;
     display: grid;
     grid-template-areas:
-        "header header"
-        "tituloAbout tituloAbout"
-        "parrafoPrinAbout parrafoPrinAbout"
-        "parrafoSecAbout videoTeam"
-        "galeriaTeam galeriaTeam"
-        "footer footer";
+        "header"
+        "tituloAbout"
+        "parrafoPrinAbout"
+        "parrafoSecAbout"
+        "galeriaTeam"
+        "footer";
 }
+
+.videoTeam{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.capa{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    background: rgba(7, 7, 7, 0.918);
+    opacity: 0.9;
+}
+
 
 .tituloAbout {
     grid-area: tituloAbout;
@@ -269,17 +301,6 @@ footer {
     grid-area: parrafoSecAbout;
     
 
-}
-
-.videoTeam {
-    grid-area:videoTeam;
-
-
-    
-}
-
-.videoTeam video{
-    width:auto;
 }
 
 .galeriaTeam {
@@ -511,7 +532,6 @@ legend{
             "tituloAbout"
             "parrafoPrinAbout"
             "parrafoSecAbout"
-            "videoTeam"
             "galeriaTeam";
     }
 
@@ -581,7 +601,6 @@ legend{
             "tituloAbout"
             "parrafoPrinAbout"
             "parrafoSecAbout"
-            "videoTeam"
             "galeriaTeam";
     }
 
@@ -664,7 +683,6 @@ legend{
             "tituloAbout"
             "parrafoPrinAbout"
             "parrafoSecAbout"
-            "videoTeam"
             "galeriaTeam";
     }
 
@@ -808,12 +826,12 @@ legend{
     .contenedorAbout {
         display: grid;
         grid-template-areas:
-            "header header"
-            "tituloAbout tituloAbout"
-            "parrafoPrinAbout parrafoPrinAbout"
-            "parrafoSecAbout videoTeam"
-            "galeriaTeam galeriaTeam"
-            "footer footer";
+            "header"
+            "tituloAbout"
+            "parrafoPrinAbout"
+            "parrafoSecAbout"
+            "galeriaTeam"
+            "footer";
     }
     
 }
