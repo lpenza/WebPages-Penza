@@ -6,20 +6,40 @@
     box-sizing: border-box;
 }
 
+/* ---------------------------------------HOME------------------------------------------------ */
 
+/* main home */
 .mainHome {
     min-height: 85vh;
     min-width: 100vw;
+    display: flex;
+    justify-content: center;
 }
 
 /* contenedorHome */
 .contenedorHome {
     display: grid;
-    grid-template-areas: "header"
+    grid-template-areas:
+        "header"
         "contenedorHome"
         "footer";
 
 }
+
+/* img principal */
+.imgPrin {
+    grid-area: imgPrin;
+    width: 50rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-self: center;
+}
+
+/* -------------------------------------------TERMINA HOME---------------------------------------------- */
+
+
+
+/* -------------------------------------------------HEADER----------------------------------------- */
 
 /* Header */
 header {
@@ -34,26 +54,19 @@ header {
 
 }
 
-/* mainHome */
-.mainHome {
-    display: flex;
-    justify-content: center;
-}
-
 /* contacto */
 .imgRedes {
     margin-top: 0.7rem;
 }
 
+/* imagenes redes */
 .imgRedes img {
     margin: 0.5rem;
     width: 18px;
-}
-
-.imgRedes a img {
     transform: scale(1);
 }
 
+/* hover images redes */
 .imgRedes a img:hover {
     transform: scale(1.1);
 }
@@ -90,15 +103,6 @@ header {
 
 }
 
-
-
-/* menu items */
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-
-}
-
 /* menu items enlaces */
 .nav-item a {
     text-decoration: none;
@@ -116,6 +120,16 @@ nav ul li a:hover {
 
 }
 
+/* termina nav bt */
+
+/* --------------------------------------------TERMINA HEADER---------------------------------------------- */
+
+
+
+
+
+
+/* ----------------------------------------------BODY GENERAL-------------------------------------------- */
 /* body general */
 
 body {
@@ -125,25 +139,10 @@ body {
 
 }
 
-/* img principal */
-.imgPrin {
-    grid-area: imgPrin;
-    width: 50rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    align-self: center;
-}
+/* -----------------------------------------------TERMINA BODY GENERAL------------------------------------------- */
 
-/* titulo */
-.tituloHome {
-    grid-area: titulo;
-    font-family: 'Paytone One', sans-serif;
-    font-weight: bold;
-    margin-bottom: 40px;
-    color: whitesmoke;
-    text-align: center;
-}
 
+/* -----------------------------------------------TITULOS GENERAL------------------------------------------- */
 /* titulos */
 .tituloService,
 .tituloAbout,
@@ -156,14 +155,17 @@ body {
 
 }
 
+/* -----------------------------------------------TERMINA TITULOS GENERAL------------------------------------------- */
+
+
+/* -----------------------------------------------PARRAFOS GENERAL------------------------------------------- */
 /* parrafos */
 .parrafoSecSevice,
 .parrafoPrinSevice,
 .parrafoSecSevice,
 .parrafoPrinAbout,
-.parrafoSecAbout,
-.contenedorGaleriaCustomer div p,
-.contenedorGaleriaCustomer div a {
+.parrafoSecAbout
+{
     font-family: 'Public Sans', sans-serif;
     font-weight: bold;
     color: whitesmoke;
@@ -171,22 +173,10 @@ body {
 
 }
 
-/* galeria */
-.boxImgcaso {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-area: boxImgcaso;
-}
+/* -----------------------------------------------TERMINA PARRAFOS GENERAL------------------------------------------- */
 
+/* -----------------------------------------------FOOTER GENERAL------------------------------------------- */
 
-/* imagenes casos */
-.boxImgcaso img {
-    width: 15rem;
-    margin: 20px;
-    padding: 1rem;
-    border-radius: 2rem;
-
-}
 
 /* footer */
 footer {
@@ -211,51 +201,68 @@ footer {
     bottom: 0;
 }
 
+/* LINKEDIN */
 .link a {
     text-decoration: none;
 }
 
+/* LINKEDIN NOMBRE */
 .link a span {
     text-decoration: underline;
 }
 
 
+/* -----------------------------------------------TERMINA FOOTER GENERAL------------------------------------------- */
 
 
 
-/* services */
 
+/* -----------------------------------------------SERVICES------------------------------------------- */
+
+/* TITULO */
 .tituloService {
     grid-area: tituloService;
 
 }
 
+/* PARRAFO PRICIPAL */
 .parrafoPrinSevice {
     grid-area: parrafoPrinSevice;
 }
+
+/* PARRAFO SECUNDARIO */
 
 .parrafoSecSevice {
     grid-area: parrafoSecSevice;
 }
 
-
+/* GALERIA DE FOTOS */
 .galeria {
     grid-area: galeria;
     display: flex;
     justify-content: space-around;
 }
 
+/* imagenes galeria */
+
 .galeria img {
     width: 250px;
 }
 
+/* -----------------------------------------------TERMINA SERVICES------------------------------------------- */
 
-/* about */
+
+
+
+/* -----------------------------------------------ABOUT------------------------------------------- */
+
+/* MAIN */
 .mainAbout {
     min-height: 70vh;
     position: relative;
 }
 
+/* CONTENEDOR PRICIPAL */
 .contenedorAbout {
 
     position: relative;
@@ -270,6 +277,7 @@ footer {
         "footer";
 }
 
+/* BACKGROUND */
 .videoTeam {
     position: absolute;
     top: 0;
@@ -289,24 +297,29 @@ footer {
     opacity: 0.6;
 }
 
+/* FIN BACKGROUND */
 
+/* TITULO */
 .tituloAbout {
     grid-area: tituloAbout;
 
 }
 
+/* PARRAFO PRICIPAL */
 .parrafoPrinAbout {
 
     grid-area: parrafoPrinAbout;
 
 }
 
+/* PARRAFO SECUNDARIO */
 .parrafoSecAbout {
     grid-area: parrafoSecAbout;
 
 
 }
 
+/* CONTENEDOR GALERIA TEAM */
 .galeriaTeam {
 
     margin: 20px;
@@ -316,6 +329,7 @@ footer {
     justify-content: space-around;
 }
 
+/* IMAGENES GALERIA TEAM */
 .imgGaleria img {
     width: 80px;
     height: 80px;
@@ -324,6 +338,7 @@ footer {
     background-color: whitesmoke;
 }
 
+/* NOMBRES TEAM */
 .imgGaleria h2 {
     text-align: center;
     color: whitesmoke;
@@ -333,10 +348,11 @@ footer {
 }
 
 
+/* -----------------------------------------------TERMINA ABOUT------------------------------------------- */
 
+/* -----------------------------------------------CUSTOMER------------------------------------------- */
 
-/* customers */
-
+/* CONTENEDOR PRICIPAL */
 .contenedorCustomer {
 
     display: grid;
@@ -348,73 +364,15 @@ footer {
 
 }
 
-
+/* TITUTLO */
 .tituloCustomer {
     grid-area: tituloCustomer;
 
 }
 
-.contenedorGaleriaCustomer {
-
-    margin: 1.3rem;
-    margin-top: 2rem;
-    grid-area: contenedorGaleriaCustomer;
-    display: flex;
-    flex-wrap: wrap;
-    width: 1000px;
-
-
-}
-
-.contenedorGaleriaCustomer div img {
-    grid-area: imgCustomer;
-    width: 200px;
-
-}
-
-.contenedorGaleriaCustomer div p {
-    grid-area: pCustomer;
-    color: whitesmoke;
-    text-align: left;
-    width: 250px;
-    height: 40px;
-    overflow: hidden;
-
-
-}
-
-
-
-/* contact */
-
-.contenedorContact {
-
-    display: grid;
-    min-height: 100vh;
-    grid-template-areas:
-        "header"
-        "form"
-        "footer";
-
-}
-
-.row {
-    padding-left: 0;
-    margin: 0;
-}
-
-
-.formCamp {
-    margin-top: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    display: flex;
-    flex-direction: column;
-
-
-}
-
+/* ESTILOS BT */
 .galeriaCustomer {
+    grid-area: contenedorGaleriaCustomer;
     display: flex;
     flex-wrap: wrap;
     margin-top: 3rem;
@@ -436,7 +394,47 @@ footer {
 
 }
 
+/* TERMINA ESTILOS BT */
 
+/* -----------------------------------------------TERMINA CUSTOMER------------------------------------------- */
+
+/* -----------------------------------------------CONTACT------------------------------------------- */
+
+/* CONTENDOR PRICIPAL */
+.contenedorContact {
+
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:
+        "header"
+        "form"
+        "footer";
+
+}
+
+/* ESTILOS BT */
+.row {
+    padding-left: 0;
+    margin: 0;
+}
+
+
+.formCamp {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+/* TERMINA ESTILOS BT */
+
+
+
+
+/* CAMPOS FORM */
 .formCamp input,
 .selectPais,
 textarea {
@@ -444,6 +442,7 @@ textarea {
 
 }
 
+/* TEXTOS CAMPOS FORM */
 .formCamp label,
 legend {
     color: whitesmoke;
@@ -452,12 +451,14 @@ legend {
     margin-bottom: 10px;
 }
 
+/* BOTONES FORM CONTENEDOR */
 .formBotones {
     margin-top: 40px;
     margin-bottom: 2rem;
 
 }
 
+/* BOTONES FORM */
 .formBotones input {
     margin-top: 40px;
     margin-right: 5px;
@@ -476,21 +477,27 @@ legend {
 }
 
 
-/* responsive */
+/* -----------------------------------------------TERMINA CONTACT------------------------------------------- */
 
-/* hasta 320px */
+
+
+
+
+
+
+
+/* -----------------------------------------------FULL RESPONSIVE------------------------------------------- */
+
+
+/* -----------------------------------------------HASTA 320------------------------------------------- */
 @media screen and (max-width: 320px) {
 
-    /* home */
+    /* HOME */
     .contenedorHome {
         display: grid;
-        grid-area: "header"
+        grid-area:
+            "header"
             "main";
-    }
-
-    header {
-        flex-direction: column;
-
     }
 
     .imgPrin {
@@ -501,25 +508,10 @@ legend {
         display: none;
     }
 
-    header nav ul li a {
-
-        font-size: 0.8rem;
-    }
-
-    .boxImgcaso {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    /* TERMINA HOME */
 
 
-    }
-
-    .boxImgcaso img {
-        width: 90%;
-
-    }
-
-    /* Services */
+    /* SERVICES */
     .mainService {
         display: grid;
         grid-template-areas:
@@ -540,7 +532,9 @@ legend {
         width: 8rem;
     }
 
+    /* TERMINA SERVICES */
 
+    /* ABOUT */
     .contenedorAbout {
         min-height: 100vh;
         grid-template-areas:
@@ -551,40 +545,19 @@ legend {
             "galeriaTeam";
     }
 
-    /* customer */
-    .contenedorGaleriaCustomer {
-        margin: 0;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .tituloCustomer {
-        font-size: medium;
-    }
-
-
-    .contenedorGaleriaCustomer div p {
-        margin: 0;
-    }
-
-    .contenedorGaleriaCustomer div a {
-        position: relative;
-        left: -1.3rem;
-    }
-
-
+    /* TERMINA ABOUT */
 
 }
 
-/* desde 320px */
+
+/* -----------------------------------------------TERMINA HASTA 320------------------------------------------- */
+
+
+
+/* -----------------------------------------------DESDE 320------------------------------------------- */
 @media screen and (min-width: 320px) {
 
-    /* home */
-    header {
-        flex-direction: column;
-
-    }
-
+    /* HOME */
     .imgPrin {
         width: 20rem;
     }
@@ -593,141 +566,82 @@ legend {
         display: none;
     }
 
-
-    header nav ul li a {
-
-        font-size: 0.8rem;
-    }
-
-    .boxImgcaso {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    /* TERMINA HOME */
 
 
-    }
+    /* SERVICES */
 
-    .boxImgcaso img {
-        width: 90%;
-
-    }
-
-    /* Services */
     .galeria {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
     }
 
-    .contenedorAbout {
-        grid-template-areas:
-            "header"
-            "tituloAbout"
-            "parrafoPrinAbout"
-            "parrafoSecAbout"
-            "galeriaTeam";
+    /* TERMINA SERVICES */
+
+    /* ABOUT */
+    .imgGaleriaOcultar {
+        display: none;
     }
 
-    /* customer */
-    .contenedorGaleriaCustomer {
-        margin: 0;
-        justify-content: center;
-        width: 100%;
-    }
+    /* TERMINA ABOUT */
+
+    /* CUSTOMER */
 
     .tituloCustomer {
         font-size: medium;
     }
 
-    .contenedorGaleriaCustomer div p {
-        margin: 0;
-    }
-
-    .contenedorGaleriaCustomer div a {
-        position: relative;
-        left: -1.3rem;
-    }
-
-    .tituloCustomer {
-        position: relative;
-    }
-
-
+    /* TERMINA CUSTOMER */
 }
 
-/* desde 600px */
+/* -----------------------------------------------TERMINA 320------------------------------------------- */
+
+
+/* -----------------------------------------------DESDE 600------------------------------------------- */
+
 @media screen and (min-width: 600px) {
 
-    /* home */
-    header {
-        flex-direction: column;
-
-
-    }
+    /* HOME */
 
     .imgPrin {
         width: 30rem;
     }
 
-    .imgCaso9 {
-        display: none;
-    }
-
-    .imgRedes {
-        display: inline-block;
-    }
 
     footer {
         display: flex;
 
     }
 
-    header nav {
-        margin: 0;
+    /* TERMINA HOME */
+
+
+    /* SERVICES */
+    .parrafoSecSevice {
+        margin-bottom: 4rem;
     }
 
-    header nav ul li a {
-        font-size: 1.2rem;
-    }
+    /* TERMINA SERVICES */
 
-    .boxImgcaso {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
 
-    }
-
-    /* Services */
-    .galeria {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .galeria img {
-        width: 8rem;
-    }
-
-    .contenedorAbout {
-        grid-template-areas:
-            "header"
-            "tituloAbout"
-            "parrafoPrinAbout"
-            "parrafoSecAbout"
-            "galeriaTeam"
-            "footer";
-    }
-
+    /* ABOUT */
     .galeriaTeam {
-        margin-bottom: 5rem;
+        margin-bottom: 4rem;
 
     }
 
-    /* customer */
-    .contenedorGaleriaCustomer {
-        margin: 0;
-        justify-content: center;
-        width: 100%;
+    .imgGaleriaMostrar {
+
+        display: inline-block;
     }
+
+    /* TERMINA ABOUT */
+
+
+
+    /* CUSTOMER */
+
 
     .tituloCustomer {
 
@@ -739,84 +653,60 @@ legend {
 
     }
 
-    .contenedorGaleriaCustomer div img {
-        width: 20rem;
-    }
-
-
-    .contenedorGaleriaCustomer div p {
-        margin: 0;
-    }
-
-    .contenedorGaleriaCustomer div a {
-        position: relative;
-        left: -1.3rem;
-    }
-
 }
 
 
+/* -----------------------------------------------TERMINA DESDE 600------------------------------------------- */
+
+
+/* -----------------------------------------------DESDE 768------------------------------------------- */
 /* desde 768px */
 @media screen and (min-width: 768px) {
 
-    /* home */
-    header {
-        flex-direction: column;
-
-    }
+    /* HOME */
 
     .imgPrin {
         width: 35rem;
     }
 
-    .imgRedes {
-        display: inline-block;
+    /* TERMINA HOME */
+
+    /* SERVICE */
+
+    .galeria img {
+        width: 20%;
     }
 
-    .imgCaso9 {
-        display: inline-block;
-    }
+    /* TERMINA SERVICES */
 
-    header nav ul li a {
-        font-size: 1.5rem;
-    }
+    /* ABOUT */
 
-    .boxImgcaso {
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
-    }
-
-    .boxImgcaso img {
-        width: 90%;
-
-    }
-
-    /* service */
-    .parrafoSecSevice {
-        margin-bottom: 10rem;
-    }
-
-    /* about */
     .galeriaTeam {
-        margin-bottom: 10rem;
+        margin-bottom: 11rem;
 
     }
+
+    /* TERMINA ABOUT */
+
+    /* CUSTOMER */
+    .card{
+        width: 15rem;
+    }
+    /* TERMINA CUSTOMER */
+
 
 
 }
 
 
-/* desde 1024px */
+/* -----------------------------------------------TERMINA DESDE 768------------------------------------------- */
+
+
+/* -----------------------------------------------DESDE 1024------------------------------------------- */
+
 @media screen and (min-width: 1024px) {
 
-    /* home */
-    header {
-        flex-direction: row;
-
-    }
-
+    /* HOME */
     .imgPrin {
         width: 45rem;
 
@@ -826,49 +716,14 @@ legend {
         display: block;
     }
 
-    header nav ul li a {
-        font-size: 1rem;
-    }
+    /* TERMINA HOME */
 
-    .contenedorHome {
-        display: grid;
-        grid-template-areas:
-            "header"
-            "contenedorHome"
-            "footer";
-    }
-
-
-
-    .boxImgcaso {
-
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-
-    }
-
-    .boxImgcaso img {
-        width: 9rem;
-        margin: 20px;
-        padding: 1rem;
-        border-radius: 2rem;
-
-    }
-
-
-    .boxImgcaso {
-        margin-bottom: 3rem;
-    }
-
-    /* services */
-    .galeria img {
-        width: 16rem;
-    }
-
-    /* service */
+    /* SERVICES */
     .parrafoSecSevice {
-        margin-bottom: 10rem;
+        margin-bottom: 8rem;
     }
+
+    /* TERMINA SERVICES */
 
     .contenedorAbout {
         display: grid;
@@ -881,91 +736,101 @@ legend {
             "footer";
     }
 
-    /* customer*/
-    .tituloCustomer{
-        text-align: left;
-        margin-left:4.1rem;
-        font-size: 2rem;
+    /* ABOUT */
+    .galeriaTeam{
+        margin: 9rem;
     }
+    /* TERMINA ABOUT */
+
+    /* CUSTOMER */
+        .tituloCustomer {
+            text-align: left;
+            margin-left: 4.1rem;
+            font-size: 2.5rem;
+        }
+    
+    /* TERMINA CUSTOMER */
+
 
 }
+
+
+
+/* -----------------------------------------------TERMINA DESDE 1024------------------------------------------- */
+
+
+/* -----------------------------------------------DESDE 1200------------------------------------------- */
 
 
 /* desde 1200px */
 @media screen and (min-width: 1200px) {
 
-    /* home */
+    /* HOME */
     .imgPrin {
         width: 50rem;
 
     }
+    /* TERMINA HOME */
 
-    .boxImgcaso img {
-        width: 10rem;
-
-
+    /* ABOUT */
+    .galeriaTeam{
+        margin: 10.2rem;
     }
-    /* customer */
-    .tituloCustomer{
+    /* TERMINA ABOUT */
+
+    /* CUSTOMER */
+    .tituloCustomer {
         text-align: center;
+        position: relative;
+        left: -1rem;
     }
 
-}
-
-
-/* desde 1920px */
-@media screen and (min-width: 1920px) {
-
-    /* home */
-    .imgPrin {
-        width: 70rem;
-    }
-
-    .boxImgcaso img {
-        width: 16rem;
-
-
-    }
-
-    .boxImgcaso {
-        margin-bottom: 0rem;
-    }
-
-    /* customer */
-    .contenedorGaleriaCustomer div img {
+    .card{
         width: 18rem;
     }
 
-    .contenedorGaleriaCustomer {
-        margin-bottom: 18rem;
+    .card img{
+        width: 15rem;
+
+      
+        
     }
 
-    .galeriaCustomer {
-        margin-bottom: 12rem;
-    }
 
-    /* services */
-    .parrafoSecSevice {
-        margin-bottom: 15rem;
-    }
+    /* TERMINA CUSTOMER */
 
-    /* about */
-    .galeriaTeam {
-        margin-bottom: 24rem;
-    }
+}
 
-    .galeriaTeam img {
+/* -----------------------------------------------TERMINA DESDE 1200------------------------------------------- */
+
+
+/* -----------------------------------------------DESDE 1920------------------------------------------- */
+
+@media screen and (min-width: 1920px) {
+
+    /* HOME */
+    .imgPrin {
+        width: 70rem;
+    }
+    /* TERMINA HOME */
+    /* ABOUT*/
+    .galeriaTeam{
+        margin:12.7rem;
         width: 8rem;
         height: 8rem;
     }
+    /* TEMRINA ABOUT */
 
-
-    /* customer */
-    .tituloCustomer{
+    /* CUSTOMER */
+    .tituloCustomer {
         text-align: left;
         position: relative;
         left: -30px;
     }
 
+    /* TERMINA CUSTOMER */
+
 
 }
+
+/* -----------------------------------------------TERMINA DESDE 1920------------------------------------------- */
