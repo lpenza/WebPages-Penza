@@ -6,6 +6,11 @@
     box-sizing: border-box;
 }
 
+
+.mainHome{
+    min-height: 85vh;
+    min-width:100vw;
+}
 /* contenedorHome */
 .contenedorHome {
     display: grid;
@@ -31,7 +36,7 @@ header {
 /* mainHome */
 .mainHome {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 /* contacto */
@@ -115,6 +120,8 @@ nav ul li a:hover {
 body {
     background: linear-gradient(90deg, #3a489e 0%, #6686c4 100%);
     background-image: linear-gradient(90deg, rgb(58, 72, 158) 0%, rgb(102, 134, 196) 100%);
+
+
 }
 
 /* img principal */
@@ -187,7 +194,7 @@ footer {
     align-items: center;
     background: linear-gradient(90deg, #3a489e 0%, #6686c4 100%);
     background-image: linear-gradient(90deg, rgb(58, 72, 158) 0%, rgb(102, 134, 196) 100%);
-    margin-top: 3.8rem;
+    /* margin-top: 3.8rem; */
 }
 
 /* copyright */
@@ -243,7 +250,7 @@ footer {
 /* about */
 
 
-.mainAbout,.mainHome{
+.mainAbout{
     min-height: 100vh;
     position: relative;
 
@@ -315,6 +322,7 @@ footer {
     height: 80px;
     margin: 20px;
     border-radius: 50%;
+    background-color: whitesmoke;
 }
 
 .imgGaleria h2 {
@@ -333,6 +341,7 @@ footer {
 .contenedorCustomer {
 
     display: grid;
+    min-height: 100vh;
     grid-template-areas:
         "header"
         "tituloCustomer"
@@ -383,11 +392,17 @@ footer {
 .contenedorContact {
 
     display: grid;
+    min-height: 100vh;
     grid-template-areas:
         "header"
         "form"
         "footer";
 
+}
+
+.row{
+    padding-left: 0;
+    margin: 0;
 }
 
 
@@ -401,10 +416,11 @@ footer {
 
 }
 
-.pruebaCont{
+.galeriaCustomer{
     display: flex;
     flex-wrap: wrap;
     margin-top: 3rem;
+    margin-bottom: 2rem;
     gap: 2rem;
     justify-content: center;
 }
@@ -439,14 +455,13 @@ legend{
 
 .formBotones {
     margin-top: 40px;
+    margin-bottom: 2rem;
 
 }
 
 .formBotones input {
     margin-top: 40px;
-    margin-right: 10px;
-    margin-left: 15px;
-    margin-bottom: 20px;
+    margin-right: 5px;
     background-color: #C4DDFF;
     border-radius: 20px;
     border: 3px solid #6fdfdf;
@@ -478,8 +493,10 @@ legend{
         flex-direction: column;
 
     }
-
-    .imgPrin,
+    .imgPrin{
+        width: 18rem;
+    }
+    
     footer {
         display: none;
     }
@@ -525,6 +542,7 @@ legend{
 
 
     .contenedorAbout {
+        min-height: 100vh;
         grid-template-areas:
             "header"
             "tituloAbout"
@@ -562,7 +580,9 @@ legend{
 
     }
 
-    .imgPrin,
+    .imgPrin{
+        width: 20rem;
+    }
     footer {
         display: none;
     }
@@ -637,7 +657,9 @@ legend{
 
     }
 
-    .imgPrin,
+    .imgPrin{
+        width: 30rem;
+    }
     .imgCaso9 {
         display: none;
     }
@@ -648,6 +670,7 @@ legend{
 
     footer {
         display: flex;
+        
     }
 
     header nav {
@@ -681,11 +704,13 @@ legend{
             "tituloAbout"
             "parrafoPrinAbout"
             "parrafoSecAbout"
-            "galeriaTeam";
+            "galeriaTeam"
+            "footer";
     }
 
     .galeriaTeam {
-        margin-bottom: 6rem;
+        margin-bottom: 5rem;
+  
     }
 
     /* customer */
@@ -726,8 +751,8 @@ legend{
 
     }
 
-    .imgPrin {
-        display: none;
+    .imgPrin{
+        width: 35rem;
     }
 
     .imgRedes {
@@ -754,10 +779,18 @@ legend{
 
     }
 
-    /* About */
-    .galeriaTeam {
-        margin-bottom: 17rem;
+    /* service */
+    .parrafoSecSevice{
+        margin-bottom: 10rem;
     }
+
+    /* about */
+    .galeriaTeam {
+        margin-bottom: 10rem;
+  
+    }
+
+
 }
 
 
@@ -770,13 +803,12 @@ legend{
 
     }
 
-    .imgPrin,
+    .imgPrin{
+        width: 45rem;
+        
+    }
     .imgRedes {
         display: block;
-    }
-
-    .imgPrin {
-        width: 25rem;
     }
 
     header nav ul li a {
@@ -808,9 +840,6 @@ legend{
 
     }
 
-    footer {
-        margin-top: 15rem;
-    }
 
     .boxImgcaso {
         margin-bottom: 3rem;
@@ -819,6 +848,10 @@ legend{
     /* services */
     .galeria img {
         width: 16rem;
+    }
+       /* service */
+       .parrafoSecSevice{
+        margin-bottom: 10rem;
     }
 
     .contenedorAbout {
@@ -838,8 +871,9 @@ legend{
 /* desde 1200px */
 @media screen and (min-width: 1200px) {
     /* home */
-    .imgPrin {
-        width: 30rem;
+    .imgPrin{
+        width: 50rem;
+        
     }
 
     .boxImgcaso img {
@@ -855,7 +889,7 @@ legend{
 @media screen and (min-width: 1920px) {
     /* home */
     .imgPrin {
-        width: 55rem;
+        width: 70rem;
     }
 
     .boxImgcaso img {
@@ -876,9 +910,10 @@ legend{
         margin-bottom: 18rem;
     }
 
-    footer {
-        margin-top: 3.8rem;
+    .galeriaCustomer{
+        margin-bottom: 12rem;
     }
+
     /* services */
     .parrafoSecSevice {
         margin-bottom: 15rem;
