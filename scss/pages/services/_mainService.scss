@@ -1,11 +1,4 @@
 .mainService {
-    display: grid;
-    grid-template-areas:
-        "tituloService"
-        "parrafoPrinSevice"
-        "galeria"
-        "parrafoSecSevice";
-
     .contenedorService {
         .tituloService {
             font-family: 'Paytone One', sans-serif;

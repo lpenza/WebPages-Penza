@@ -76,35 +76,35 @@ footer {
     margin-right: 2rem;
     align-self: center; }
 
-.mainService {
-  display: grid;
-  grid-template-areas: "tituloService" "parrafoPrinSevice" "galeria" "parrafoSecSevice"; }
-  .mainService .contenedorService .tituloService {
-    font-family: 'Paytone One', sans-serif;
-    font-weight: bold;
-    margin-left: 1.3rem;
-    color: whitesmoke;
-    grid-area: tituloService; }
-  .mainService .contenedorService .parrafoPrinSevice {
-    font-family: 'Public Sans', sans-serif;
-    font-weight: bold;
-    color: whitesmoke;
-    margin: 1.3rem;
-    grid-area: parrafoPrinSevice; }
-  .mainService .contenedorService .galeria {
-    grid-area: galeria;
-    display: flex;
-    justify-content: space-around; }
-    .mainService .contenedorService .galeria img {
-      width: 250px; }
-  .mainService .contenedorService .parrafoSecSevice {
-    font-family: 'Public Sans', sans-serif;
-    font-weight: bold;
-    color: whitesmoke;
-    margin: 1.3rem;
-    grid-area: parrafoPrinSevice;
-    grid-area: parrafoSecSevice;
-    margin-bottom: 16rem; }
+.mainService .contenedorService .tituloService {
+  font-family: 'Paytone One', sans-serif;
+  font-weight: bold;
+  margin-left: 1.3rem;
+  color: whitesmoke;
+  grid-area: tituloService; }
+
+.mainService .contenedorService .parrafoPrinSevice {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+  margin: 1.3rem;
+  grid-area: parrafoPrinSevice; }
+
+.mainService .contenedorService .galeria {
+  grid-area: galeria;
+  display: flex;
+  justify-content: space-around; }
+  .mainService .contenedorService .galeria img {
+    width: 250px; }
+
+.mainService .contenedorService .parrafoSecSevice {
+  font-family: 'Public Sans', sans-serif;
+  font-weight: bold;
+  color: whitesmoke;
+  margin: 1.3rem;
+  grid-area: parrafoPrinSevice;
+  grid-area: parrafoSecSevice;
+  margin-bottom: 16rem; }
 
 body .contenedorAbout {
   position: relative;
@@ -228,20 +228,137 @@ body .capa {
       font-family: 'Roboto', sans-serif;
       font-weight: bold;
       margin-bottom: 10px; }
-    .contenedorContact .container-fluid .row .formBotones input {
+    .contenedorContact .container-fluid .row .formBotones {
       margin-top: 40px;
-      margin-right: 5px;
-      background-color: #C4DDFF;
-      border-radius: 20px;
-      border: 3px solid #6fdfdf;
-      display: inline-block;
-      cursor: pointer;
-      color: #001D6E;
-      font-family: Arial;
-      font-size: 19px;
-      font-weight: bold;
-      padding: 6px 14px;
-      text-decoration: none; }
+      margin-bottom: 2rem; }
+      .contenedorContact .container-fluid .row .formBotones input {
+        margin-top: 40px;
+        margin-right: 5px;
+        background-color: #C4DDFF;
+        border-radius: 20px;
+        border: 3px solid #6fdfdf;
+        display: inline-block;
+        cursor: pointer;
+        color: #001D6E;
+        font-family: Arial;
+        font-size: 19px;
+        font-weight: bold;
+        padding: 6px 14px;
+        text-decoration: none; }
+
+/* Hasta 320 */
+/* HOME */
+@media screen and (max-width: 320px) {
+  .mainHome .contenedorHome {
+    display: grid;
+    grid-area: "header" "main"; }
+    .mainHome .contenedorHome .imgPrin {
+      width: 18rem; }
+  footer {
+    display: none; }
+  /* SERVICES */
+  .mainService {
+    display: grid;
+    grid-template-areas: "tituloService" "parrafoPrinSevice" "galeria" "parrafoSecSevice"; }
+    .mainService .contenedorService .galeria {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+      .mainService .contenedorService .galeria img {
+        width: 8rem; }
+  /* ABOUT */
+  .contenedorAbout {
+    min-height: 100vh;
+    grid-template-areas: "header" "tituloAbout" "parrafoPrinAbout" "parrafoSecAbout" "galeriaTeam"; }
+    .contenedorAbout .mainAbout .galeriaTeam .imgGaleriaOcultar {
+      display: none; }
+  /* Customer */
+  .mainCustomer .contenedorCustomer .tituloCustomer {
+    font-size: medium; } }
+
+/* Desde 320 */
+@media screen and (min-width: 320px) {
+  /* home */
+  .mainHome .contenedorHome .imgPrin {
+    width: 20rem; }
+  footer {
+    display: none; }
+  /* Services */
+  .mainService .contenedorService .galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+  /* About */
+  .mainAbout .galeriaTeam .imgGaleriaOcultar {
+    display: none; }
+  /* Customer */
+  .mainCustomer .contenedorCustomer .tituloCustomer {
+    font-size: medium; } }
+
+/* Desde 600 */
+@media screen and (min-width: 600px) {
+  /* home */
+  .mainHome .contenedorHome .imgPrin {
+    width: 30rem; }
+  footer {
+    display: flex; }
+  /* About */
+  .mainAbout .galeriaTeam {
+    margin-bottom: 4rem; }
+    .mainAbout .galeriaTeam .imgGaleriaOcultar {
+      display: inline-block; }
+  /* Customer */
+  .mainCustomer .contenedorCustomer .tituloCustomer {
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+    left: -10px;
+    font-size: larger; } }
+
+/* Desde 768 */
+@media screen and (min-width: 768px) {
+  /* home */
+  .mainHome .contenedorHome .imgPrin {
+    width: 35rem; }
+  /* Service */
+  .mainService .contenedorService .galeria img {
+    width: 20%; }
+  /* About */
+  .mainAbout .galeriaTeam {
+    margin-bottom: 11rem; }
+  /* Customer */
+  .mainCustomer .contenedorCustomer .galeriaCustomer .card {
+    width: 15rem; } }
+
+/* Desde 1024 */
+@media screen and (min-width: 1024px) {
+  /* home */
+  .mainHome .contenedorHome .imgPrin {
+    width: 45rem; }
+  /* Service */
+  .mainService .contenedorService .galeria img {
+    width: 20%; }
+  /* About */
+  .mainAbout .galeriaTeam {
+    margin-bottom: 11rem; }
+  /* Customer */
+  .mainCustomer .contenedorCustomer .galeriaCustomer .card {
+    width: 15rem; } }
+
+/* Desde 1920 */
+@media screen and (min-width: 1200px) {
+  .mainHome .contenedorHome .imgPrin {
+    width: 50rem; }
+  .mainCustomer .contenedorCustomer .galeriaCustomer .card {
+    width: 18rem; }
+    .mainCustomer .contenedorCustomer .galeriaCustomer .card img {
+      width: 15rem; } }
+
+/* Desde 1920 */
+@media screen and (min-width: 1920px) {
+  /* Home */
+  .mainHome .contenedorHome .imgPrin {
+    width: 70rem; } }
 
 body {
   background: linear-gradient(90deg, #3a489e 0%, #6686c4 100%);

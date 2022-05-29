@@ -452,11 +452,11 @@ legend {
 } */
 
 /* BOTONES FORM CONTENEDOR */
-.formBotones {
+/* .formBotones {
     margin-top: 40px;
     margin-bottom: 2rem;
 
-}
+} */
 
 /* BOTONES FORM */
 /* .formBotones input {
@@ -493,7 +493,7 @@ legend {
 @media screen and (max-width: 320px) {
 
     /* HOME */
-    .contenedorHome {
+    /* .contenedorHome {
         display: grid;
         grid-area:
             "header"
@@ -502,11 +502,11 @@ legend {
 
     .imgPrin {
         width: 18rem;
-    }
+    } */
 
-    footer {
+    /* footer {
         display: none;
-    }
+    } */
 
     /* TERMINA HOME */
 
@@ -522,20 +522,20 @@ legend {
 
     } */
 
-    .galeria {
+    /* .galeria {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    }
+    } */
 
-    .galeria img {
+    /* .galeria img {
         width: 8rem;
-    }
+    } */
 
     /* TERMINA SERVICES */
 
     /* ABOUT */
-    .contenedorAbout {
+    /* .contenedorAbout {
         min-height: 100vh;
         grid-template-areas:
             "header"
@@ -543,7 +543,7 @@ legend {
             "parrafoPrinAbout"
             "parrafoSecAbout"
             "galeriaTeam";
-    }
+    } */
 
     /* TERMINA ABOUT */
 
@@ -558,39 +558,39 @@ legend {
 @media screen and (min-width: 320px) {
 
     /* HOME */
-    .imgPrin {
+    /* .imgPrin {
         width: 20rem;
     }
 
     footer {
         display: none;
-    }
+    } */
 
     /* TERMINA HOME */
 
 
     /* SERVICES */
 
-    .galeria {
+    /* .galeria {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-    }
+    } */
 
     /* TERMINA SERVICES */
 
     /* ABOUT */
-    .imgGaleriaOcultar {
+    /* .imgGaleriaOcultar {
         display: none;
-    }
+    } */
 
     /* TERMINA ABOUT */
 
     /* CUSTOMER */
 
-    .tituloCustomer {
+    /* .tituloCustomer {
         font-size: medium;
-    }
+    } */
 
     /* TERMINA CUSTOMER */
 }
@@ -604,7 +604,7 @@ legend {
 
     /* HOME */
 
-    .imgPrin {
+    /* .imgPrin {
         width: 30rem;
     }
 
@@ -612,7 +612,7 @@ legend {
     footer {
         display: flex;
 
-    }
+    } */
 
     /* TERMINA HOME */
 
@@ -626,7 +626,7 @@ legend {
 
 
     /* ABOUT */
-    .galeriaTeam {
+    /* .galeriaTeam {
         margin-bottom: 4rem;
 
     }
@@ -634,7 +634,7 @@ legend {
     .imgGaleriaMostrar {
 
         display: inline-block;
-    }
+    } */
 
     /* TERMINA ABOUT */
 
@@ -643,7 +643,7 @@ legend {
     /* CUSTOMER */
 
 
-    .tituloCustomer {
+    /* .tituloCustomer {
 
         margin-bottom: 2rem;
         text-align: center;
@@ -651,7 +651,7 @@ legend {
         left: -10px;
         font-size: larger;
 
-    }
+    } */
 
 }
 
@@ -673,25 +673,25 @@ legend {
 
     /* SERVICE */
 
-    .galeria img {
+    /* .galeria img {
         width: 20%;
-    }
+    } */
 
     /* TERMINA SERVICES */
 
     /* ABOUT */
 
-    .galeriaTeam {
+    /* .galeriaTeam {
         margin-bottom: 11rem;
 
-    }
+    } */
 
     /* TERMINA ABOUT */
 
     /* CUSTOMER */
-    .card{
+    /* .card{
         width: 15rem;
-    }
+    } */
     /* TERMINA CUSTOMER */
 
 
@@ -706,11 +706,11 @@ legend {
 
 @media screen and (min-width: 1024px) {
 
-    /* HOME */
+    /* HOME
     .imgPrin {
         width: 45rem;
 
-    }
+    } */
 
     .imgRedes {
         display: block;
@@ -785,7 +785,7 @@ legend {
         left: -1rem;
     }
 
-    .card{
+    /* .card{
         width: 18rem;
     }
 
@@ -794,7 +794,7 @@ legend {
 
       
         
-    }
+    } */
 
 
     /* TERMINA CUSTOMER */
@@ -809,9 +809,9 @@ legend {
 @media screen and (min-width: 1920px) {
 
     /* HOME */
-    .imgPrin {
+    /* .imgPrin {
         width: 70rem;
-    }
+    } */
     /* TERMINA HOME */
     /* ABOUT*/
     .galeriaTeam{
