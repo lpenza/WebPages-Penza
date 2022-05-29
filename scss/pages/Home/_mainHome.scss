@@ -1,0 +1,17 @@
+.mainHome {
+    min-height: 85vh;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .contenedorHome {
+            .imgPrin{
+                grid-area: imgPrin;
+                width: 50rem;
+                margin-left: 2rem;
+                margin-right: 2rem;
+                align-self: center;
+            }
+    }
+}

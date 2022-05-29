@@ -1,0 +1,248 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+header .navbar {
+  width: 100%;
+  background: linear-gradient(90deg, #3a489e 0%, #6686c4 100%); }
+  header .navbar .container-fluid .logo {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Paytone One', sans-serif;
+    font-size: larger;
+    margin: 1rem; }
+  header .navbar .container-fluid .navbar-toggler {
+    border: none; }
+    header .navbar .container-fluid .navbar-toggler .navbar-toggler-icon {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='whitesmoke' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+  header .navbar .container-fluid .navbar-collapse {
+    flex-grow: 0; }
+    header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item a {
+      text-decoration: none;
+      font-family: 'Paytone One', sans-serif;
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 0.5rem;
+      color: whitesmoke; }
+      header .navbar .container-fluid .navbar-collapse .navbar-nav .nav-item a:hover {
+        color: #2231319a; }
+    header .navbar .container-fluid .navbar-collapse .navbar-nav .navImg .imgRedes {
+      margin-top: 0.7rem; }
+      header .navbar .container-fluid .navbar-collapse .navbar-nav .navImg .imgRedes a img {
+        margin: 0.5rem;
+        width: 18px;
+        transform: scale(1); }
+        header .navbar .container-fluid .navbar-collapse .navbar-nav .navImg .imgRedes a img:hover {
+          transform: scale(1.1); }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #3a489e 0%, #6686c4 100%);
+  background-image: linear-gradient(90deg, #3a489e 0%, #6686c4 100%); }
+  footer .link a {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 12px;
+    margin-right: 30px;
+    margin-left: 10px;
+    bottom: 0;
+    text-decoration: none; }
+    footer .link a span {
+      text-decoration: underline; }
+  footer .copy {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    font-size: 12px;
+    margin-right: 30px;
+    margin-left: 10px;
+    bottom: 0; }
+
+.mainHome {
+  min-height: 85vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .mainHome .contenedorHome .imgPrin {
+    grid-area: imgPrin;
+    width: 50rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    align-self: center; }
+
+.mainService {
+  display: grid;
+  grid-template-areas: "tituloService" "parrafoPrinSevice" "galeria" "parrafoSecSevice"; }
+  .mainService .contenedorService .tituloService {
+    font-family: 'Paytone One', sans-serif;
+    font-weight: bold;
+    margin-left: 1.3rem;
+    color: whitesmoke;
+    grid-area: tituloService; }
+  .mainService .contenedorService .parrafoPrinSevice {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 1.3rem;
+    grid-area: parrafoPrinSevice; }
+  .mainService .contenedorService .galeria {
+    grid-area: galeria;
+    display: flex;
+    justify-content: space-around; }
+    .mainService .contenedorService .galeria img {
+      width: 250px; }
+  .mainService .contenedorService .parrafoSecSevice {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    margin: 1.3rem;
+    grid-area: parrafoPrinSevice;
+    grid-area: parrafoSecSevice;
+    margin-bottom: 16rem; }
+
+body .contenedorAbout {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-areas: "header" "tituloAbout" "parrafoPrinAbout" "parrafoSecAbout" "galeriaTeam" "footer"; }
+  body .contenedorAbout .mainAbout {
+    min-height: 70vh;
+    position: relative; }
+    body .contenedorAbout .mainAbout .tituloAbout {
+      font-family: 'Paytone One', sans-serif;
+      font-weight: bold;
+      margin-left: 1.3rem;
+      color: whitesmoke;
+      grid-area: tituloAbout; }
+    body .contenedorAbout .mainAbout .parrafoPrinAbout {
+      font-family: 'Public Sans', sans-serif;
+      font-weight: bold;
+      color: whitesmoke;
+      margin: 1.3rem;
+      grid-area: parrafoPrinAbout; }
+    body .contenedorAbout .mainAbout .parrafoSecAbout {
+      font-family: 'Public Sans', sans-serif;
+      font-weight: bold;
+      color: whitesmoke;
+      margin: 1.3rem;
+      grid-area: parrafoPrinAbout;
+      grid-area: parrafoSecAbout; }
+    body .contenedorAbout .mainAbout .galeriaTeam {
+      margin: 20px;
+      grid-area: galeriaTeam;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      body .contenedorAbout .mainAbout .galeriaTeam .imgGaleria img {
+        width: 80px;
+        height: 80px;
+        margin: 20px;
+        border-radius: 50%;
+        background-color: whitesmoke; }
+      body .contenedorAbout .mainAbout .galeriaTeam .imgGaleria h2 {
+        text-align: center;
+        color: whitesmoke;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        font-size: medium; }
+
+body .videoTeam {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+body .capa {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(7, 7, 7, 0.918);
+  opacity: 0.6; }
+
+.mainCustomer .contenedorCustomer {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas: "tituloCustomer" "contenedorGaleriaCustomer" "footer"; }
+  .mainCustomer .contenedorCustomer .tituloCustomer {
+    font-family: 'Paytone One', sans-serif;
+    font-weight: bold;
+    margin-left: 1.3rem;
+    color: whitesmoke;
+    grid-area: tituloCustomer; }
+  .mainCustomer .contenedorCustomer .galeriaCustomer {
+    grid-area: contenedorGaleriaCustomer;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    gap: 2rem;
+    justify-content: center; }
+    .mainCustomer .contenedorCustomer .galeriaCustomer .card {
+      background-color: transparent;
+      border: none; }
+      .mainCustomer .contenedorCustomer .galeriaCustomer .card .card-title {
+        font-family: 'Public Sans', sans-serif;
+        font-weight: bold;
+        color: whitesmoke; }
+      .mainCustomer .contenedorCustomer .galeriaCustomer .card .card-text {
+        font-family: 'Public Sans', sans-serif;
+        font-weight: bold;
+        color: whitesmoke; }
+
+.contenedorContact {
+  display: grid;
+  min-height: 100vh;
+  grid-template-areas: "header" "form" "footer"; }
+  .contenedorContact .container-fluid .row {
+    padding-left: 0;
+    margin: 0; }
+    .contenedorContact .container-fluid .row .formCamp {
+      margin-top: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      display: flex;
+      flex-direction: column; }
+      .contenedorContact .container-fluid .row .formCamp input {
+        border-radius: 30px; }
+      .contenedorContact .container-fluid .row .formCamp .selectPais {
+        border-radius: 30px; }
+      .contenedorContact .container-fluid .row .formCamp textarea {
+        border-radius: 30px; }
+      .contenedorContact .container-fluid .row .formCamp label {
+        color: whitesmoke;
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+        margin-bottom: 10px; }
+    .contenedorContact .container-fluid .row legend {
+      color: whitesmoke;
+      font-family: 'Roboto', sans-serif;
+      font-weight: bold;
+      margin-bottom: 10px; }
+    .contenedorContact .container-fluid .row .formBotones input {
+      margin-top: 40px;
+      margin-right: 5px;
+      background-color: #C4DDFF;
+      border-radius: 20px;
+      border: 3px solid #6fdfdf;
+      display: inline-block;
+      cursor: pointer;
+      color: #001D6E;
+      font-family: Arial;
+      font-size: 19px;
+      font-weight: bold;
+      padding: 6px 14px;
+      text-decoration: none; }
+
+body {
+  background: linear-gradient(90deg, #3a489e 0%, #6686c4 100%);
+  background-image: linear-gradient(90deg, #3a489e 0%, #6686c4 100%); }

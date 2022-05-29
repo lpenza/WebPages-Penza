@@ -1,0 +1,90 @@
+body{
+    .contenedorAbout {
+        position: relative;
+        z-index: 2;
+        display: grid;
+        grid-template-areas:
+            "header"
+            "tituloAbout"
+            "parrafoPrinAbout"
+            "parrafoSecAbout"
+            "galeriaTeam"
+            "footer";
+    
+        .mainAbout {
+            min-height: 70vh;
+            position: relative;
+    
+            .tituloAbout {
+                font-family: 'Paytone One', sans-serif;
+                font-weight: bold;
+                margin-left: 1.3rem;
+                color: whitesmoke;
+                grid-area: tituloAbout;
+            }
+    
+            .parrafoPrinAbout {
+                font-family: 'Public Sans', sans-serif;
+                font-weight: bold;
+                color: whitesmoke;
+                margin: 1.3rem;
+                grid-area: parrafoPrinAbout;
+            }
+    
+            .parrafoSecAbout {
+                font-family: 'Public Sans', sans-serif;
+                font-weight: bold;
+                color: whitesmoke;
+                margin: 1.3rem;
+                grid-area: parrafoPrinAbout;
+                grid-area: parrafoSecAbout;
+            }
+    
+            .galeriaTeam {
+                margin: 20px;
+                grid-area: galeriaTeam;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+    
+                .imgGaleria {
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        margin: 20px;
+                        border-radius: 50%;
+                        background-color: whitesmoke;
+                    }
+                    h2{
+                        text-align: center;
+                        color: whitesmoke;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: bold;
+                        font-size: medium;
+                    }
+                }
+            }
+    
+        }
+    
+    }
+
+    .videoTeam {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .capa {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(7, 7, 7, 0.918);
+        opacity: 0.6;
+    }
+}
+

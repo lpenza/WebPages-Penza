@@ -1,0 +1,26 @@
+//de aca es que se copian todos los estilos, es por eso que necesito incluir el resto
+//Reset
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+//Importaciones
+@import "utilities/variables";
+@import "utilities/mixin";
+@import "utilities/map";
+@import "header";
+@import "footer";
+@import"pages/Home/mainHome";
+@import "pages/services/mainService";
+@import "pages/about/mainAbout";
+@import "pages/customer/mainCustomer";
+@import "pages/contact/contact";
+
+
+body {
+    background: linear-gradient(90deg, #3a489e 0%, #6686c4 100%);
+    background-image: linear-gradient(90deg, rgb(58, 72, 158) 0%, rgb(102, 134, 196) 100%);
+
+
+}

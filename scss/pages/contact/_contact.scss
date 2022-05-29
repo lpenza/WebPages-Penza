@@ -1,0 +1,62 @@
+.contenedorContact{
+    display: grid;
+    min-height: 100vh;
+    grid-template-areas:
+        "header"
+        "form"
+        "footer";
+        .container-fluid{
+            .row {
+                padding-left: 0;
+                margin: 0;
+                .formCamp {
+                    margin-top: 20px;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    input{
+                        border-radius: 30px;
+
+                    }
+                    .selectPais{
+                        border-radius: 30px;
+                    }
+                    textarea{
+                        border-radius: 30px;
+                    }
+                    label{
+                        color: whitesmoke;
+                        font-family: 'Roboto', sans-serif;
+                        font-weight: bold;
+                        margin-bottom: 10px;
+                    }
+                
+                }
+                legend{
+                    color: whitesmoke;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: bold;
+                    margin-bottom: 10px;
+                }
+                .formBotones input {
+                    margin-top: 40px;
+                    margin-right: 5px;
+                    background-color: #C4DDFF;
+                    border-radius: 20px;
+                    border: 3px solid #6fdfdf;
+                    display: inline-block;
+                    cursor: pointer;
+                    color: #001D6E;
+                    font-family: Arial;
+                    font-size: 19px;
+                    font-weight: bold;
+                    padding: 6px 14px;
+                    text-decoration: none;
+                
+                }
+                
+            }
+            
+        }
+}

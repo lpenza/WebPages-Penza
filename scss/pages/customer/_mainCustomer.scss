@@ -1,0 +1,44 @@
+.mainCustomer {
+    .contenedorCustomer {
+        display: grid;
+        min-height: 100vh;
+        grid-template-areas:
+            "tituloCustomer"
+            "contenedorGaleriaCustomer"
+            "footer";
+
+        .tituloCustomer {
+            font-family: 'Paytone One', sans-serif;
+            font-weight: bold;
+            margin-left: 1.3rem;
+            color: whitesmoke;
+            grid-area: tituloCustomer;
+        }
+
+        .galeriaCustomer {
+            grid-area: contenedorGaleriaCustomer;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 3rem;
+            margin-bottom: 2rem;
+            gap: 2rem;
+            justify-content: center;
+
+            .card {
+                background-color: transparent;
+                border: none;
+
+                .card-title {
+                    font-family: 'Public Sans', sans-serif;
+                    font-weight: bold;
+                    color: whitesmoke;
+                }
+                .card-text{
+                    font-family: 'Public Sans', sans-serif;
+                    font-weight: bold;
+                    color: whitesmoke;
+                }
+            }
+        }
+    }
+}
