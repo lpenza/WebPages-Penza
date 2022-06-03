@@ -1,5 +1,6 @@
 body{
     .contenedorAbout {
+        margin-top: 6rem;
         position: relative;
         z-index: 2;
         display: grid;
@@ -12,13 +13,19 @@ body{
             "footer";
     
         .mainAbout {
-            min-height: 70vh;
+            max-height: 70vh;
+            overflow: auto;
             position: relative;
-    
+            padding: 2rem;
+            background: rgba( 58, 72, 158, 0.2 );
+            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+            backdrop-filter: blur( 6.5px );
+            -webkit-backdrop-filter: blur( 6.5px );
+            border-radius: 10px;
+            border: 1px solid rgba( 255, 255, 255, 0.18 );
             .tituloAbout {
                 font-family: 'Paytone One', sans-serif;
                 font-weight: bold;
-                margin-left: 1.3rem;
                 color: whitesmoke;
                 grid-area: tituloAbout;
             }
@@ -27,7 +34,6 @@ body{
                 font-family: 'Public Sans', sans-serif;
                 font-weight: bold;
                 color: whitesmoke;
-                margin: 1.3rem;
                 grid-area: parrafoPrinAbout;
             }
     
@@ -35,7 +41,6 @@ body{
                 font-family: 'Public Sans', sans-serif;
                 font-weight: bold;
                 color: whitesmoke;
-                margin: 1.3rem;
                 grid-area: parrafoPrinAbout;
                 grid-area: parrafoSecAbout;
             }
@@ -84,7 +89,7 @@ body{
         width: 100%;
         height: 100%;
         background: rgba(7, 7, 7, 0.918);
-        opacity: 0.6;
+        opacity: 0.8;
     }
 }
 

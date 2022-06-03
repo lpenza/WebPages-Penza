@@ -1,9 +1,10 @@
 .mainService {
     .contenedorService {
+        margin-top: 6rem;
+        min-height: 95vh;
         .tituloService {
             font-family: 'Paytone One', sans-serif;
             font-weight: bold;
-            margin-left: 1.3rem;
             color: whitesmoke;
             grid-area: tituloService;
         }
@@ -12,7 +13,6 @@
             font-family: 'Public Sans', sans-serif;
             font-weight: bold;
             color: whitesmoke;
-            margin: 1.3rem;
             grid-area: parrafoPrinSevice;
         }
         .galeria{
@@ -27,7 +27,6 @@
             font-family: 'Public Sans', sans-serif;
             font-weight: bold;
             color: whitesmoke;
-            margin: 1.3rem;
             grid-area: parrafoPrinSevice;
             grid-area: parrafoSecSevice;
             margin-bottom: 16rem;

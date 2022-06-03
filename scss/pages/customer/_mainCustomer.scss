@@ -1,5 +1,6 @@
 .mainCustomer {
     .contenedorCustomer {
+        margin-top: 6rem;
         display: grid;
         min-height: 100vh;
         grid-template-areas:
@@ -10,7 +11,6 @@
         .tituloCustomer {
             font-family: 'Paytone One', sans-serif;
             font-weight: bold;
-            margin-left: 1.3rem;
             color: whitesmoke;
             grid-area: tituloCustomer;
         }
@@ -19,7 +19,7 @@
             grid-area: contenedorGaleriaCustomer;
             display: flex;
             flex-wrap: wrap;
-            margin-top: 3rem;
+            margin: 6rem;
             margin-bottom: 2rem;
             gap: 2rem;
             justify-content: center;
@@ -27,7 +27,6 @@
             .card {
                 background-color: transparent;
                 border: none;
-
                 .card-title {
                     font-family: 'Public Sans', sans-serif;
                     font-weight: bold;

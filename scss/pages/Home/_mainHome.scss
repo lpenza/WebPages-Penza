@@ -1,17 +1,28 @@
 .mainHome {
-    min-height: 85vh;
-    min-width: 100vw;
+    min-height: 84vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
 
     .contenedorHome {
+
+
             .imgPrin{
                 grid-area: imgPrin;
-                width: 50rem;
+                width: 50%;
                 margin-left: 2rem;
                 margin-right: 2rem;
                 align-self: center;
+                
             }
+    }
+    h1{
+        align-self: flex-start;
+        margin-left:6rem;
+        margin-bottom: 3rem;
+        font-family: 'Paytone One', sans-serif;
+        font-weight: bold;
+        color: whitesmoke;
+        
     }
 }

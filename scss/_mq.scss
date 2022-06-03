@@ -2,17 +2,21 @@
 /* HOME */
 @media screen and (max-width: 320px) {
     .mainHome {
+        h1{
+            align-self: center;
+            margin-bottom: 10rem;
+            font-size: larger;
+            margin-left: 0;
+            
+        }
         .contenedorHome {
-            display: grid;
-            grid-area:
-                "header"
-                "main";
-
             .imgPrin {
                 width: 18rem;
+                margin: 0;
             }
 
         }
+     
 
     }
 
@@ -30,6 +34,18 @@
             "parrafoSecSevice";
 
         .contenedorService {
+            .tituloService{
+                margin: 0;
+                text-align: center;
+                margin-top: 2rem;
+               
+            }
+            .parrafoPrinSevice{
+                margin: 2rem;
+            }
+            .parrafoSecSevice{
+                margin: 2rem;
+            }
             .galeria {
                 display: flex;
                 flex-direction: row;
@@ -66,10 +82,38 @@
     .mainCustomer {
         .contenedorCustomer {
             .tituloCustomer {
+                margin-top:4rem;
                 font-size: medium;
+                text-align: center;
+            }
+            .galeriaCustomer{
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                .card{
+                    img{
+                        width:16rem;
+                        align-self: center;
+
+
+                    }
+                    .card-body{
+                       display: flex;
+                       flex-direction: column;
+                    }
+                }
             }
         }
     }
+    /* Contact */
+    .mainContact{
+        .contenedorContact{
+            img{
+                display: none;
+            }
+        }
+    }
+   
 }
 
 
@@ -80,10 +124,20 @@
 
     /* home */
     .mainHome {
+        margin-top: 2rem;
+        h1{
+            align-self: center;
+            margin-bottom: 10rem;
+            font-size: 1.5rem;
+            margin-left: 0;
+            
+        }
         .contenedorHome {
             .imgPrin {
-                width: 20rem;
+                width: 18rem;
+                margin: 0;
             }
+
         }
     }
 
@@ -94,16 +148,33 @@
     /* Services */
     .mainService {
         .contenedorService {
+            margin-top: 8rem;
+            .tituloService{
+                text-align: center;
+                margin: 0;
+                
+            }
+            .parrafoPrinSevice{
+                margin: 2rem;
+            }
+            .parrafoSecSevice{
+                margin: 2rem;
+            }
             .galeria {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
+
+                img {
+                    width: 8rem;
+                }
             }
         }
     }
 
     /* About */
     .mainAbout {
+        margin: 3rem;
         .galeriaTeam {
             .imgGaleriaOcultar {
                 display: none;
@@ -116,6 +187,33 @@
         .contenedorCustomer {
             .tituloCustomer {
                 font-size: medium;
+                text-align: center;
+                margin-top: 2rem;
+            }
+            .galeriaCustomer{
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                .card{
+                    img{
+                        width:16rem;
+                        align-self: center;
+
+
+                    }
+                    .card-body{
+                       display: flex;
+                       flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+    /* Contact */
+    .mainContact{
+        .contenedorContact{
+            img{
+                display: none;
             }
         }
     }
@@ -126,6 +224,9 @@
 
     /* home */
     .mainHome {
+        h1{
+            font-size: 2.5rem;
+        }
         .contenedorHome {
             .imgPrin {
                 width: 30rem;
@@ -149,21 +250,19 @@
         }
     }
 
-    /* Customer */
-    .mainCustomer {
-        .contenedorCustomer {
-
-            .tituloCustomer {
-
-                margin-bottom: 2rem;
-                text-align: center;
-                position: relative;
-                left: -10px;
-                font-size: larger;
-
+   /* Customer */
+   .mainCustomer{
+    .contenedorCustomer{
+        .tituloCustomer{
+            font-size: 2rem;
+        }
+        .galeriaCustomer{
+            .card{
+                width: 15rem;
             }
         }
     }
+}
 }
 
 /* Desde 768 */
@@ -171,6 +270,11 @@
     
     /* home */
     .mainHome {
+        h1{
+            align-self: flex-start;
+            margin-left: 10rem;
+            margin-bottom: 8rem;
+        }
         .contenedorHome {
             .imgPrin {
                 width: 35rem;
@@ -218,6 +322,19 @@
     /* Service */
     .mainService {
         .contenedorService {
+            .tituloService{
+                text-align: left;
+                margin-left:6rem;
+                
+            }
+            .parrafoPrinSevice{
+                margin-left:6rem;
+                margin-right: 6rem;
+            }
+            .parrafoSecSevice{
+                margin-left:6rem;
+                margin-right: 6rem;
+            }
             .galeria {
                 img{
                     width: 20%;
@@ -238,6 +355,14 @@
                 .card{
                     width: 15rem;
                 }
+            }
+        }
+    }
+    /* Contact */
+    .mainContact{
+        .contenedorContact{
+            img{
+                display: inline-block;
             }
         }
     }

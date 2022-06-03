@@ -1,16 +1,17 @@
 header {
     .navbar {
-        
         width: 100%;
         background: linear-gradient(90deg, #3a489e 0%, #6686c4 100%);
         .container-fluid {
             .logo {
-                color: whitesmoke;
+                img{
+                    width: 40%;
+                }
                 text-decoration: none;
+                color:#A10003;
                 font-family: 'Paytone One', sans-serif;
-                font-size: larger;
+                font-size: 1.5rem;
                 margin: 1rem;
-
             }
 
             .navbar-toggler {
@@ -60,3 +61,4 @@ header {
         }
     }
 }
+
