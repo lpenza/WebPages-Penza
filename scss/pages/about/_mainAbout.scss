@@ -61,7 +61,7 @@ body{
                 border-radius: 10px;
                 border: 1px solid rgba( 255, 255, 255, 0.18 );
                 height: 10rem;
-                overflow: auto;
+                overflow-x: auto;
                 .imgGaleria {
                     background: linear-gradient(45deg,gold,fuchsia);
                     border-radius: 100%;
