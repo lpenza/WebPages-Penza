@@ -60,7 +60,7 @@
 
     /* ABOUT */
     .contenedorAbout {
-        min-height: 100vh;
+        min-height: 80vh;
         grid-template-areas:
             "header"
             "tituloAbout"
@@ -69,6 +69,7 @@
             "galeriaTeam";
 
         .mainAbout {
+            margin-bottom: 0;
             .galeriaTeam {
                 .imgGaleriaOcultar {
                     display: none;
@@ -174,7 +175,9 @@
 
     /* About */
     .mainAbout {
-        margin: 3rem;
+        margin-top: 3rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
         .galeriaTeam {
             .imgGaleriaOcultar {
                 display: none;
@@ -242,7 +245,7 @@
     /* About */
     .mainAbout {
         .galeriaTeam {
-            margin-bottom: 4rem;
+            margin-bottom: 6rem;
 
             .imgGaleriaOcultar {
                 display: inline-block;
@@ -289,12 +292,6 @@
                     width: 20%;
                 }
             }
-        }
-    }
-    /* About */
-    .mainAbout {
-        .galeriaTeam {
-            margin-bottom: 11rem;
         }
     }
     /* Customer */
@@ -344,9 +341,7 @@
     }
     /* About */
     .mainAbout {
-        .galeriaTeam {
-            margin-bottom: 11rem;
-        }
+        margin-bottom: 1rem;
     }
     /* Customer */
     .mainCustomer{
@@ -368,7 +363,7 @@
     }
 }
 
-/* Desde 1920 */
+/* Desde 1200*/
 @media screen and (min-width: 1200px) {
     .mainHome {
         .contenedorHome {
@@ -389,6 +384,10 @@
             }
         }
     }
+
+    .mainAbout {
+        margin-bottom: 9rem;
+    }
 }
 
 /* Desde 1920 */
@@ -401,6 +400,8 @@
             }
         }
     }
-    
+    .mainAbout {
+        margin-bottom: 11rem;
+    }
 
 }

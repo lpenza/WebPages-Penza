@@ -100,7 +100,8 @@ footer {
   .mainService .contenedorService .galeria {
     grid-area: galeria;
     display: flex;
-    justify-content: space-around; }
+    justify-content: space-around;
+    margin: 4rem; }
     .mainService .contenedorService .galeria img {
       width: 250px; }
   .mainService .contenedorService .parrafoSecSevice {
@@ -117,44 +118,68 @@ body .contenedorAbout {
   z-index: 2;
   display: grid;
   grid-template-areas: "header" "tituloAbout" "parrafoPrinAbout" "parrafoSecAbout" "galeriaTeam" "footer"; }
-  body .contenedorAbout .mainAbout {
-    max-height: 70vh;
-    overflow: auto;
-    position: relative;
-    padding: 2rem;
+  body .contenedorAbout .mainAbout .contenidoAbout {
     background: rgba(58, 72, 158, 0.2);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(6.5px);
     -webkit-backdrop-filter: blur(6.5px);
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18); }
-    body .contenedorAbout .mainAbout .tituloAbout {
-      font-family: 'Paytone One', sans-serif;
-      font-weight: bold;
-      color: whitesmoke;
-      grid-area: tituloAbout; }
-    body .contenedorAbout .mainAbout .parrafoPrinAbout {
-      font-family: 'Public Sans', sans-serif;
-      font-weight: bold;
-      color: whitesmoke;
-      grid-area: parrafoPrinAbout; }
-    body .contenedorAbout .mainAbout .parrafoSecAbout {
-      font-family: 'Public Sans', sans-serif;
-      font-weight: bold;
-      color: whitesmoke;
-      grid-area: parrafoPrinAbout;
-      grid-area: parrafoSecAbout; }
-    body .contenedorAbout .mainAbout .galeriaTeam {
-      margin: 20px;
-      grid-area: galeriaTeam;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    max-height: 50vh;
+    overflow: auto;
+    position: relative; }
+  body .contenedorAbout .mainAbout .tituloAbout {
+    font-family: 'Paytone One', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    grid-area: tituloAbout; }
+  body .contenedorAbout .mainAbout .parrafoPrinAbout {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    grid-area: parrafoPrinAbout; }
+  body .contenedorAbout .mainAbout .parrafoSecAbout {
+    font-family: 'Public Sans', sans-serif;
+    font-weight: bold;
+    color: whitesmoke;
+    grid-area: parrafoPrinAbout;
+    grid-area: parrafoSecAbout; }
+  body .contenedorAbout .mainAbout .galeriaTeam {
+    grid-area: galeriaTeam;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: rgba(58, 72, 158, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(6.5px);
+    -webkit-backdrop-filter: blur(6.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    height: 10rem;
+    overflow: auto; }
+    body .contenedorAbout .mainAbout .galeriaTeam .imgGaleria {
+      background: linear-gradient(45deg, gold, fuchsia);
+      border-radius: 100%;
       display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around; }
+      flex-direction: column;
+      justify-content: center;
+      padding: 4px;
+      width: 88px;
+      height: 88px;
+      margin: 20px; }
+      body .contenedorAbout .mainAbout .galeriaTeam .imgGaleria:hover {
+        transform: scale(1.1); }
       body .contenedorAbout .mainAbout .galeriaTeam .imgGaleria img {
+        position: relative;
+        bottom: -14px;
+        align-self: center;
         width: 80px;
         height: 80px;
-        margin: 20px;
-        border-radius: 50%;
+        margin: 30px;
+        border-radius: 100%;
+        padding: 4px;
         background-color: whitesmoke; }
       body .contenedorAbout .mainAbout .galeriaTeam .imgGaleria h2 {
         text-align: center;
@@ -299,10 +324,12 @@ body .capa {
         width: 8rem; }
   /* ABOUT */
   .contenedorAbout {
-    min-height: 100vh;
+    min-height: 80vh;
     grid-template-areas: "header" "tituloAbout" "parrafoPrinAbout" "parrafoSecAbout" "galeriaTeam"; }
-    .contenedorAbout .mainAbout .galeriaTeam .imgGaleriaOcultar {
-      display: none; }
+    .contenedorAbout .mainAbout {
+      margin-bottom: 0; }
+      .contenedorAbout .mainAbout .galeriaTeam .imgGaleriaOcultar {
+        display: none; }
   /* Customer */
   .mainCustomer .contenedorCustomer .tituloCustomer {
     margin-top: 4rem;
@@ -355,7 +382,9 @@ body .capa {
         width: 8rem; }
   /* About */
   .mainAbout {
-    margin: 3rem; }
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem; }
     .mainAbout .galeriaTeam .imgGaleriaOcultar {
       display: none; }
   /* Customer */
@@ -388,7 +417,7 @@ body .capa {
     display: flex; }
   /* About */
   .mainAbout .galeriaTeam {
-    margin-bottom: 4rem; }
+    margin-bottom: 6rem; }
     .mainAbout .galeriaTeam .imgGaleriaOcultar {
       display: inline-block; }
   /* Customer */
@@ -409,9 +438,6 @@ body .capa {
   /* Service */
   .mainService .contenedorService .galeria img {
     width: 20%; }
-  /* About */
-  .mainAbout .galeriaTeam {
-    margin-bottom: 11rem; }
   /* Customer */
   .mainCustomer .contenedorCustomer .galeriaCustomer .card {
     width: 15rem; } }
@@ -434,8 +460,8 @@ body .capa {
   .mainService .contenedorService .galeria img {
     width: 20%; }
   /* About */
-  .mainAbout .galeriaTeam {
-    margin-bottom: 11rem; }
+  .mainAbout {
+    margin-bottom: 1rem; }
   /* Customer */
   .mainCustomer .contenedorCustomer .galeriaCustomer .card {
     width: 15rem; }
@@ -443,20 +469,24 @@ body .capa {
   .mainContact .contenedorContact img {
     display: inline-block; } }
 
-/* Desde 1920 */
+/* Desde 1200*/
 @media screen and (min-width: 1200px) {
   .mainHome .contenedorHome .imgPrin {
     width: 50rem; }
   .mainCustomer .contenedorCustomer .galeriaCustomer .card {
     width: 18rem; }
     .mainCustomer .contenedorCustomer .galeriaCustomer .card img {
-      width: 15rem; } }
+      width: 15rem; }
+  .mainAbout {
+    margin-bottom: 9rem; } }
 
 /* Desde 1920 */
 @media screen and (min-width: 1920px) {
   /* Home */
   .mainHome .contenedorHome .imgPrin {
-    width: 70rem; } }
+    width: 70rem; }
+  .mainAbout {
+    margin-bottom: 11rem; } }
 
 body {
   background: linear-gradient(90deg, #3a489e 0%, #6686c4 100%);

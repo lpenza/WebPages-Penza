@@ -13,16 +13,20 @@ body{
             "footer";
     
         .mainAbout {
-            max-height: 70vh;
-            overflow: auto;
-            position: relative;
-            padding: 2rem;
-            background: rgba( 58, 72, 158, 0.2 );
-            box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-            backdrop-filter: blur( 6.5px );
-            -webkit-backdrop-filter: blur( 6.5px );
-            border-radius: 10px;
-            border: 1px solid rgba( 255, 255, 255, 0.18 );
+            .contenidoAbout{
+                background: rgba( 58, 72, 158, 0.2 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 6.5px );
+                -webkit-backdrop-filter: blur( 6.5px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+                padding: 2rem;
+                margin-bottom: 2rem;
+                max-height: 50vh;
+                overflow: auto;
+                position: relative;
+
+            }
             .tituloAbout {
                 font-family: 'Paytone One', sans-serif;
                 font-weight: bold;
@@ -46,19 +50,43 @@ body{
             }
     
             .galeriaTeam {
-                margin: 20px;
                 grid-area: galeriaTeam;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-around;
-    
+                background: rgba( 58, 72, 158, 0.2 );
+                box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+                backdrop-filter: blur( 6.5px );
+                -webkit-backdrop-filter: blur( 6.5px );
+                border-radius: 10px;
+                border: 1px solid rgba( 255, 255, 255, 0.18 );
+                height: 10rem;
+                overflow: auto;
                 .imgGaleria {
+                    background: linear-gradient(45deg,gold,fuchsia);
+                    border-radius: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    padding: 4px;
+                    width: 88px;
+                    height: 88px;
+                    margin: 20px;
+                    &:hover{
+                        transform: scale(1.1);
+                    }
                     img {
+                        position: relative;
+                        bottom: -14px;
+                        align-self: center;
                         width: 80px;
                         height: 80px;
-                        margin: 20px;
-                        border-radius: 50%;
+                        margin: 30px;
+                        border-radius: 100%;
+                        padding: 4px;
                         background-color: whitesmoke;
+                       
+                        
                     }
                     h2{
                         text-align: center;
