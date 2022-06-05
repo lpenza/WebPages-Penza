@@ -240,44 +240,54 @@ body .capa {
   .mainContact img {
     width: 80%; }
   .mainContact .contenedorContact {
-    margin-top: 6rem;
+    margin-top: 11rem;
     min-height: 100vh; }
     .mainContact .contenedorContact .container-fluid {
       margin-left: 20px;
       margin-top: 20px; }
-      .mainContact .contenedorContact .container-fluid .row .formCamp input {
-        border-radius: 30px; }
-      .mainContact .contenedorContact .container-fluid .row .formCamp .selectPais {
-        border-radius: 30px; }
-      .mainContact .contenedorContact .container-fluid .row .formCamp textarea {
-        border-radius: 30px; }
-      .mainContact .contenedorContact .container-fluid .row .formCamp label {
-        color: whitesmoke;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        margin-bottom: 10px; }
-      .mainContact .contenedorContact .container-fluid .row legend {
-        color: whitesmoke;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        margin-bottom: 10px; }
-      .mainContact .contenedorContact .container-fluid .row .formBotones {
-        margin-top: 40px;
-        margin-bottom: 2rem; }
-        .mainContact .contenedorContact .container-fluid .row .formBotones input {
-          margin-top: 40px;
-          margin-right: 5px;
-          background-color: #C4DDFF;
-          border-radius: 20px;
-          border: 3px solid #6fdfdf;
-          display: inline-block;
-          cursor: pointer;
-          color: #001D6E;
-          font-family: Arial;
-          font-size: 19px;
+      .mainContact .contenedorContact .container-fluid .row {
+        width: 96vw; }
+        .mainContact .contenedorContact .container-fluid .row .form {
+          margin-right: 2rem; }
+          .mainContact .contenedorContact .container-fluid .row .form fieldset .formCamp {
+            display: flex;
+            flex-direction: column; }
+        .mainContact .contenedorContact .container-fluid .row .formCamp input {
+          border-radius: 30px;
+          margin-bottom: 10px; }
+        .mainContact .contenedorContact .container-fluid .row .formCamp textarea {
+          border-radius: 30px;
+          margin-bottom: 10px; }
+        .mainContact .contenedorContact .container-fluid .row .formCamp label {
+          position: relative;
+          left: 10px;
+          color: whitesmoke;
+          font-family: 'Roboto', sans-serif;
           font-weight: bold;
-          padding: 6px 14px;
-          text-decoration: none; }
+          margin-bottom: 10px;
+          margin-top: 10px; }
+        .mainContact .contenedorContact .container-fluid .row legend {
+          color: whitesmoke;
+          font-family: 'Roboto', sans-serif;
+          font-weight: bold;
+          margin-bottom: 10px; }
+        .mainContact .contenedorContact .container-fluid .row .formBotones {
+          display: flex;
+          margin-top: 2rem; }
+          .mainContact .contenedorContact .container-fluid .row .formBotones input {
+            background-color: #C4DDFF;
+            border-radius: 20px;
+            border: 3px solid #6fdfdf;
+            display: inline-block;
+            cursor: pointer;
+            color: #001D6E;
+            font-family: Arial;
+            font-size: 19px;
+            font-weight: bold;
+            padding: 6px 14px;
+            text-decoration: none;
+            width: 90vw;
+            margin-right: 0.5rem; }
 
 /* Hasta 320 */
 /* HOME */
