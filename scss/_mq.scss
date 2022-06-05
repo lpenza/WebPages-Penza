@@ -220,6 +220,12 @@
             img{
                 display: none;
             }
+            .formBotones{
+                flex-direction: column;
+                input{
+                    margin-bottom: 1rem;
+                }
+            }
         }
     }
 }
@@ -266,6 +272,13 @@
                 width: 15rem;
             }
         }
+    }
+}
+/* contact */
+.formBotones{
+    flex-direction: column;
+    input{
+        margin-bottom: 1rem;
     }
 }
 }
@@ -360,6 +373,12 @@
         .contenedorContact{
             img{
                 display: inline-block;
+            }
+            .formBotones{
+                flex-direction: row;
+                input{
+                    margin-bottom: 1rem;
+                }
             }
         }
     }

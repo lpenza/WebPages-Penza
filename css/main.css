@@ -405,7 +405,11 @@ body .capa {
       flex-direction: column; }
   /* Contact */
   .mainContact .contenedorContact img {
-    display: none; } }
+    display: none; }
+  .mainContact .contenedorContact .formBotones {
+    flex-direction: column; }
+    .mainContact .contenedorContact .formBotones input {
+      margin-bottom: 1rem; } }
 
 /* Desde 600 */
 @media screen and (min-width: 600px) {
@@ -425,7 +429,12 @@ body .capa {
   .mainCustomer .contenedorCustomer .tituloCustomer {
     font-size: 2rem; }
   .mainCustomer .contenedorCustomer .galeriaCustomer .card {
-    width: 15rem; } }
+    width: 15rem; }
+  /* contact */
+  .formBotones {
+    flex-direction: column; }
+    .formBotones input {
+      margin-bottom: 1rem; } }
 
 /* Desde 768 */
 @media screen and (min-width: 768px) {
@@ -468,7 +477,11 @@ body .capa {
     width: 15rem; }
   /* Contact */
   .mainContact .contenedorContact img {
-    display: inline-block; } }
+    display: inline-block; }
+  .mainContact .contenedorContact .formBotones {
+    flex-direction: row; }
+    .mainContact .contenedorContact .formBotones input {
+      margin-bottom: 1rem; } }
 
 /* Desde 1200*/
 @media screen and (min-width: 1200px) {
