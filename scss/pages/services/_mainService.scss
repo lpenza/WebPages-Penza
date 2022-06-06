@@ -10,28 +10,12 @@
         }
 
         .parrafoPrinSevice {
-            font-family: 'Public Sans', sans-serif;
-            font-weight: bold;
-            color: whitesmoke;
-            grid-area: parrafoPrinSevice;
-        }
-        .galeria{
-            grid-area: galeria;
             display: flex;
-            justify-content: space-around;
-            margin: 4rem;
-            img{
-                width: 250px;
-            }
-        }
-        .parrafoSecSevice{
+            flex-direction: column;
             font-family: 'Public Sans', sans-serif;
             font-weight: bold;
             color: whitesmoke;
             grid-area: parrafoPrinSevice;
-            grid-area: parrafoSecSevice;
-            margin-bottom: 16rem;
         }
-
     }
 }

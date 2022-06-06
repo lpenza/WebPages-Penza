@@ -93,24 +93,12 @@ footer {
     color: whitesmoke;
     grid-area: tituloService; }
   .mainService .contenedorService .parrafoPrinSevice {
+    display: flex;
+    flex-direction: column;
     font-family: 'Public Sans', sans-serif;
     font-weight: bold;
     color: whitesmoke;
     grid-area: parrafoPrinSevice; }
-  .mainService .contenedorService .galeria {
-    grid-area: galeria;
-    display: flex;
-    justify-content: space-around;
-    margin: 4rem; }
-    .mainService .contenedorService .galeria img {
-      width: 250px; }
-  .mainService .contenedorService .parrafoSecSevice {
-    font-family: 'Public Sans', sans-serif;
-    font-weight: bold;
-    color: whitesmoke;
-    grid-area: parrafoPrinSevice;
-    grid-area: parrafoSecSevice;
-    margin-bottom: 16rem; }
 
 body .contenedorAbout {
   margin-top: 6rem;
@@ -150,7 +138,7 @@ body .contenedorAbout {
     grid-area: galeriaTeam;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-items: center;
     background: rgba(58, 72, 158, 0.2);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(6.5px);
@@ -225,7 +213,8 @@ body .capa {
     justify-content: center; }
     .mainCustomer .contenedorCustomer .galeriaCustomer .card {
       background-color: transparent;
-      border: none; }
+      border: none;
+      align-self: flex-end; }
       .mainCustomer .contenedorCustomer .galeriaCustomer .card .card-title {
         font-family: 'Public Sans', sans-serif;
         font-weight: bold;
@@ -236,14 +225,14 @@ body .capa {
         color: whitesmoke; }
 
 .mainContact {
-  display: flex; }
+  display: flex;
+  justify-content: center; }
   .mainContact img {
     width: 80%; }
   .mainContact .contenedorContact {
     margin-top: 11rem;
     min-height: 100vh; }
     .mainContact .contenedorContact .container-fluid {
-      margin-left: 20px;
       margin-top: 20px; }
       .mainContact .contenedorContact .container-fluid .row {
         width: 96vw; }
@@ -254,10 +243,13 @@ body .capa {
             flex-direction: column; }
         .mainContact .contenedorContact .container-fluid .row .formCamp input {
           border-radius: 30px;
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          padding-left: 0.5rem; }
         .mainContact .contenedorContact .container-fluid .row .formCamp textarea {
           border-radius: 30px;
-          margin-bottom: 10px; }
+          margin-bottom: 10px;
+          padding-left: 1.1rem;
+          padding-top: 1rem; }
         .mainContact .contenedorContact .container-fluid .row .formCamp label {
           position: relative;
           left: 10px;
@@ -266,6 +258,10 @@ body .capa {
           font-weight: bold;
           margin-bottom: 10px;
           margin-top: 10px; }
+        .mainContact .contenedorContact .container-fluid .row .formCamp select {
+          border-radius: 30px;
+          margin-bottom: 10px;
+          padding-left: 0.5rem; }
         .mainContact .contenedorContact .container-fluid .row legend {
           color: whitesmoke;
           font-family: 'Roboto', sans-serif;
@@ -302,24 +298,23 @@ body .capa {
     margin: 0; }
   footer {
     display: none; }
-  /* SERVICES */
-  .mainService {
-    display: grid;
-    grid-template-areas: "tituloService" "parrafoPrinSevice" "galeria" "parrafoSecSevice"; }
+  .mainService .contenedorService {
+    margin-top: 8rem; }
     .mainService .contenedorService .tituloService {
-      margin: 0;
       text-align: center;
-      margin-top: 2rem; }
+      margin: 0; }
     .mainService .contenedorService .parrafoPrinSevice {
       margin: 2rem; }
-    .mainService .contenedorService .parrafoSecSevice {
-      margin: 2rem; }
-    .mainService .contenedorService .galeria {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; }
-      .mainService .contenedorService .galeria img {
-        width: 8rem; }
+      .mainService .contenedorService .parrafoPrinSevice .servicePaso1 img {
+        width: 90%; }
+      .mainService .contenedorService .parrafoPrinSevice .servicePaso2 img {
+        width: 90%; }
+      .mainService .contenedorService .parrafoPrinSevice .servicePaso3 img {
+        width: 90%; }
+      .mainService .contenedorService .parrafoPrinSevice .servicePaso4 img {
+        width: 90%; }
+      .mainService .contenedorService .parrafoPrinSevice .serviceNoMostrar {
+        display: none; }
   /* ABOUT */
   .contenedorAbout {
     min-height: 80vh;
@@ -370,14 +365,16 @@ body .capa {
       margin: 0; }
     .mainService .contenedorService .parrafoPrinSevice {
       margin: 2rem; }
-    .mainService .contenedorService .parrafoSecSevice {
-      margin: 2rem; }
-    .mainService .contenedorService .galeria {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap; }
-      .mainService .contenedorService .galeria img {
-        width: 8rem; }
+      .mainService .contenedorService .parrafoPrinSevice .servicePaso1 img {
+        width: 90%; }
+      .mainService .contenedorService .parrafoPrinSevice .servicePaso2 img {
+        width: 90%; }
+      .mainService .contenedorService .parrafoPrinSevice .servicePaso3 img {
+        width: 90%; }
+      .mainService .contenedorService .parrafoPrinSevice .servicePaso4 img {
+        width: 90%; }
+      .mainService .contenedorService .parrafoPrinSevice .serviceNoMostrar {
+        display: none; }
   /* About */
   .mainAbout {
     margin-top: 3rem;
@@ -437,8 +434,8 @@ body .capa {
   .mainHome .contenedorHome .imgPrin {
     width: 35rem; }
   /* Service */
-  .mainService .contenedorService .galeria img {
-    width: 20%; }
+  .mainService .contenedorService .parrafoPrinSevice .serviceNoMostrar {
+    display: inline-block; }
   /* Customer */
   .mainCustomer .contenedorCustomer .galeriaCustomer .card {
     width: 15rem; } }
@@ -453,13 +450,29 @@ body .capa {
     text-align: left;
     margin-left: 6rem; }
   .mainService .contenedorService .parrafoPrinSevice {
+    display: grid;
+    grid-template-areas: "serviceNoMostrar serviceNoMostrar" "servicePaso1 servicePaso2" "servicePaso3 servicePaso4";
+    gap: 3rem;
     margin-left: 6rem;
     margin-right: 6rem; }
-  .mainService .contenedorService .parrafoSecSevice {
-    margin-left: 6rem;
-    margin-right: 6rem; }
-  .mainService .contenedorService .galeria img {
-    width: 20%; }
+    .mainService .contenedorService .parrafoPrinSevice .serviceNoMostrar {
+      grid-area: serviceNoMostrar; }
+    .mainService .contenedorService .parrafoPrinSevice .servicePaso1 {
+      grid-area: servicePaso1; }
+      .mainService .contenedorService .parrafoPrinSevice .servicePaso1 img {
+        width: 90%; }
+    .mainService .contenedorService .parrafoPrinSevice .servicePaso2 {
+      grid-area: servicePaso2; }
+      .mainService .contenedorService .parrafoPrinSevice .servicePaso2 img {
+        width: 90%; }
+    .mainService .contenedorService .parrafoPrinSevice .servicePaso3 {
+      grid-area: servicePaso3; }
+      .mainService .contenedorService .parrafoPrinSevice .servicePaso3 img {
+        width: 90%; }
+    .mainService .contenedorService .parrafoPrinSevice .servicePaso4 {
+      grid-area: servicePaso4; }
+      .mainService .contenedorService .parrafoPrinSevice .servicePaso4 img {
+        width: 90%; }
   /* About */
   .mainAbout {
     margin-bottom: 1rem; }
@@ -479,15 +492,33 @@ body .capa {
     .mainCustomer .contenedorCustomer .galeriaCustomer .card img {
       width: 15rem; }
   .mainAbout {
-    margin-bottom: 9rem; } }
+    margin-bottom: 12rem; } }
 
 /* Desde 1920 */
 @media screen and (min-width: 1920px) {
   /* Home */
   .mainHome .contenedorHome .imgPrin {
     width: 70rem; }
+  /* servicios */
+  .servicePaso1 {
+    grid-area: servicePaso1; }
+    .servicePaso1 img {
+      max-width: 70%; }
+  .servicePaso2 {
+    grid-area: servicePaso2; }
+    .servicePaso2 img {
+      max-width: 70%; }
+  .servicePaso3 {
+    grid-area: servicePaso3; }
+    .servicePaso3 img {
+      max-width: 70%; }
+  .servicePaso4 {
+    grid-area: servicePaso4; }
+    .servicePaso4 img {
+      max-width: 70%; }
+  /* nosotros */
   .mainAbout {
-    margin-bottom: 11rem; } }
+    margin-bottom: 14rem; } }
 
 body {
   background: linear-gradient(90deg, #3a489e 0%, #6686c4 100%);

@@ -2,13 +2,14 @@
 /* HOME */
 @media screen and (max-width: 320px) {
     .mainHome {
-        h1{
+        h1 {
             align-self: center;
             margin-bottom: 10rem;
             font-size: larger;
             margin-left: 0;
-            
+
         }
+
         .contenedorHome {
             .imgPrin {
                 width: 18rem;
@@ -16,7 +17,7 @@
             }
 
         }
-     
+
 
     }
 
@@ -24,35 +25,46 @@
         display: none;
     }
 
-    /* SERVICES */
     .mainService {
-        display: grid;
-        grid-template-areas:
-            "tituloService"
-            "parrafoPrinSevice"
-            "galeria"
-            "parrafoSecSevice";
-
         .contenedorService {
-            .tituloService{
-                margin: 0;
-                text-align: center;
-                margin-top: 2rem;
-               
-            }
-            .parrafoPrinSevice{
-                margin: 2rem;
-            }
-            .parrafoSecSevice{
-                margin: 2rem;
-            }
-            .galeria {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
+            margin-top: 8rem;
 
-                img {
-                    width: 8rem;
+            .tituloService {
+                text-align: center;
+                margin: 0;
+
+            }
+
+            .parrafoPrinSevice {
+
+                .servicePaso1 {
+                    img {
+                        width: 90%;
+                    }
+
+                }
+
+                .servicePaso2 {
+                    img {
+                        width: 90%;
+                    }
+                }
+
+                .servicePaso3 {
+                    img {
+                        width: 90%;
+                    }
+                }
+
+                .servicePaso4 {
+                    img {
+                        width: 90%;
+                    }
+                }
+                margin: 2rem;
+
+                .serviceNoMostrar {
+                    display: none;
                 }
             }
         }
@@ -70,6 +82,7 @@
 
         .mainAbout {
             margin-bottom: 0;
+
             .galeriaTeam {
                 .imgGaleriaOcultar {
                     display: none;
@@ -83,38 +96,42 @@
     .mainCustomer {
         .contenedorCustomer {
             .tituloCustomer {
-                margin-top:4rem;
+                margin-top: 4rem;
                 font-size: medium;
                 text-align: center;
             }
-            .galeriaCustomer{
+
+            .galeriaCustomer {
                 display: flex;
                 justify-content: center;
                 margin: 0;
-                .card{
-                    img{
-                        width:16rem;
+
+                .card {
+                    img {
+                        width: 16rem;
                         align-self: center;
 
 
                     }
-                    .card-body{
-                       display: flex;
-                       flex-direction: column;
+
+                    .card-body {
+                        display: flex;
+                        flex-direction: column;
                     }
                 }
             }
         }
     }
+
     /* Contact */
-    .mainContact{
-        .contenedorContact{
-            img{
+    .mainContact {
+        .contenedorContact {
+            img {
                 display: none;
             }
         }
     }
-   
+
 }
 
 
@@ -126,13 +143,15 @@
     /* home */
     .mainHome {
         margin-top: 2rem;
-        h1{
+
+        h1 {
             align-self: center;
             margin-bottom: 10rem;
             font-size: 1.5rem;
             margin-left: 0;
-            
+
         }
+
         .contenedorHome {
             .imgPrin {
                 width: 18rem;
@@ -150,24 +169,43 @@
     .mainService {
         .contenedorService {
             margin-top: 8rem;
-            .tituloService{
+
+            .tituloService {
                 text-align: center;
                 margin: 0;
-                
-            }
-            .parrafoPrinSevice{
-                margin: 2rem;
-            }
-            .parrafoSecSevice{
-                margin: 2rem;
-            }
-            .galeria {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
 
-                img {
-                    width: 8rem;
+            }
+
+            .parrafoPrinSevice {
+
+                .servicePaso1 {
+                    img {
+                        width: 90%;
+                    }
+
+                }
+
+                .servicePaso2 {
+                    img {
+                        width: 90%;
+                    }
+                }
+
+                .servicePaso3 {
+                    img {
+                        width: 90%;
+                    }
+                }
+
+                .servicePaso4 {
+                    img {
+                        width: 90%;
+                    }
+                }
+                margin: 2rem;
+
+                .serviceNoMostrar {
+                    display: none;
                 }
             }
         }
@@ -178,9 +216,11 @@
         margin-top: 3rem;
         margin-left: 2rem;
         margin-right: 2rem;
+
         .galeriaTeam {
             display: flex;
             flex-direction: column;
+
             .imgGaleriaOcultar {
                 display: none;
             }
@@ -195,29 +235,33 @@
                 text-align: center;
                 margin-top: 2rem;
             }
-            .galeriaCustomer{
+
+            .galeriaCustomer {
                 display: flex;
                 justify-content: center;
                 margin: 0;
-                .card{
-                    img{
-                        width:16rem;
+
+                .card {
+                    img {
+                        width: 16rem;
                         align-self: center;
 
 
                     }
-                    .card-body{
-                       display: flex;
-                       flex-direction: column;
+
+                    .card-body {
+                        display: flex;
+                        flex-direction: column;
                     }
                 }
             }
         }
     }
+
     /* Contact */
-    .mainContact{
-        .contenedorContact{
-            img{
+    .mainContact {
+        .contenedorContact {
+            img {
                 display: none;
             }
         }
@@ -229,9 +273,10 @@
 
     /* home */
     .mainHome {
-        h1{
+        h1 {
             font-size: 2.5rem;
         }
+
         .contenedorHome {
             .imgPrin {
                 width: 30rem;
@@ -255,52 +300,56 @@
         }
     }
 
-   /* Customer */
-   .mainCustomer{
-    .contenedorCustomer{
-        .tituloCustomer{
-            font-size: 2rem;
-        }
-        .galeriaCustomer{
-            .card{
-                width: 15rem;
+    /* Customer */
+    .mainCustomer {
+        .contenedorCustomer {
+            .tituloCustomer {
+                font-size: 2rem;
+            }
+
+            .galeriaCustomer {
+                .card {
+                    width: 15rem;
+                }
             }
         }
     }
 }
-}
 
 /* Desde 768 */
 @media screen and (min-width: 768px) {
-    
+
     /* home */
     .mainHome {
-        h1{
+        h1 {
             align-self: flex-start;
             margin-left: 10rem;
             margin-bottom: 8rem;
         }
+
         .contenedorHome {
             .imgPrin {
                 width: 35rem;
             }
         }
     }
+
     /* Service */
     .mainService {
         .contenedorService {
-            .galeria {
-                img{
-                    width: 20%;
+            .parrafoPrinSevice {
+                .serviceNoMostrar {
+                    display: inline-block;
                 }
             }
         }
     }
+
     /* Customer */
-    .mainCustomer{
-        .contenedorCustomer{
-            .galeriaCustomer{
-                .card{
+    .mainCustomer {
+        .contenedorCustomer {
+            .galeriaCustomer {
+                .card {
                     width: 15rem;
                 }
             }
@@ -310,55 +359,96 @@
 
 /* Desde 1024 */
 @media screen and (min-width: 1024px) {
-      /* home */
-      .mainHome {
+
+    /* home */
+    .mainHome {
         .contenedorHome {
             .imgPrin {
                 width: 45rem;
             }
         }
     }
+
     /* Service */
     .mainService {
         .contenedorService {
-            .tituloService{
+            .tituloService {
                 text-align: left;
-                margin-left:6rem;
-                
+                margin-left: 6rem;
+
             }
-            .parrafoPrinSevice{
-                margin-left:6rem;
-                margin-right: 6rem;
-            }
-            .parrafoSecSevice{
-                margin-left:6rem;
-                margin-right: 6rem;
-            }
-            .galeria {
-                img{
-                    width: 20%;
+
+            .parrafoPrinSevice {
+                display: grid;
+                grid-template-areas:
+                    "serviceNoMostrar serviceNoMostrar"
+                    "servicePaso1 servicePaso2"
+                    "servicePaso3 servicePaso4";
+                    gap: 3rem;
+
+                .serviceNoMostrar {
+                    grid-area: serviceNoMostrar;
                 }
+
+                .servicePaso1 {
+                    grid-area: servicePaso1;
+
+                    img {
+                        width: 90%;
+                    }
+
+                }
+
+                .servicePaso2 {
+                    grid-area: servicePaso2;
+
+                    img {
+                        width: 90%;
+                    }
+                }
+
+                .servicePaso3 {
+                    grid-area: servicePaso3;
+
+                    img {
+                        width: 90%;
+                    }
+                }
+
+                .servicePaso4 {
+                    grid-area: servicePaso4;
+
+                    img {
+                        width: 90%;
+                    }
+                }
+
+                margin-left:6rem;
+                margin-right: 6rem;
             }
         }
     }
+
     /* About */
     .mainAbout {
         margin-bottom: 1rem;
     }
+
     /* Customer */
-    .mainCustomer{
-        .contenedorCustomer{
-            .galeriaCustomer{
-                .card{
+    .mainCustomer {
+        .contenedorCustomer {
+            .galeriaCustomer {
+                .card {
                     width: 15rem;
                 }
             }
         }
     }
+
     /* Contact */
-    .mainContact{
-        .contenedorContact{
-            img{
+    .mainContact {
+        .contenedorContact {
+            img {
                 display: inline-block;
             }
         }
@@ -374,12 +464,14 @@
             }
         }
     }
-    .mainCustomer{
-        .contenedorCustomer{
-            .galeriaCustomer{
-                .card{
+
+    .mainCustomer {
+        .contenedorCustomer {
+            .galeriaCustomer {
+                .card {
                     width: 18rem;
-                    img{
+
+                    img {
                         width: 15rem;
                     }
                 }
@@ -388,12 +480,13 @@
     }
 
     .mainAbout {
-        margin-bottom: 9rem;
+        margin-bottom: 12rem;
     }
 }
 
 /* Desde 1920 */
 @media screen and (min-width: 1920px) {
+
     /* Home */
     .mainHome {
         .contenedorHome {
@@ -402,8 +495,43 @@
             }
         }
     }
-    .mainAbout {
-        margin-bottom: 11rem;
+    /* servicios */
+    .servicePaso1 {
+        grid-area: servicePaso1;
+
+        img {
+            max-width: 70%;
+        }
+
     }
+
+    .servicePaso2 {
+        grid-area: servicePaso2;
+
+        img {
+            max-width: 70%;
+        }
+    }
+
+    .servicePaso3 {
+        grid-area: servicePaso3;
+
+        img {
+            max-width: 70%;
+        }
+    }
+
+    .servicePaso4 {
+        grid-area: servicePaso4;
+
+        img {
+            max-width: 70%;
+        }
+    }
+/* nosotros */
+    .mainAbout {
+        margin-bottom: 14rem;
+    }
+
 
 }
