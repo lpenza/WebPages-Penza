@@ -73,13 +73,6 @@
     /* ABOUT */
     .contenedorAbout {
         min-height: 80vh;
-        grid-template-areas:
-            "header"
-            "tituloAbout"
-            "parrafoPrinAbout"
-            "parrafoSecAbout"
-            "galeriaTeam";
-
         .mainAbout {
             margin-bottom: 0;
 

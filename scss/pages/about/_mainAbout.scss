@@ -6,14 +6,13 @@ body{
         display: grid;
         grid-template-areas:
             "header"
-            "tituloAbout"
-            "parrafoPrinAbout"
-            "parrafoSecAbout"
-            "galeriaTeam"
+            "mainAbout"
             "footer";
     
         .mainAbout {
+            grid-area: mainAbout;
             .contenidoAbout{
+                margin-top: 2rem;
                 background: rgba( 58, 72, 158, 0.2 );
                 box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
                 backdrop-filter: blur( 6.5px );
@@ -28,7 +27,8 @@ body{
 
             }
             .tituloAbout {
-                font-family: 'Paytone One', sans-serif;
+                margin-left: 1rem;
+                font-family: $funteTitulos;
                 font-weight: bold;
                 color: whitesmoke;
                 grid-area: tituloAbout;
@@ -38,17 +38,10 @@ body{
                 font-family: 'Public Sans', sans-serif;
                 font-weight: bold;
                 color: whitesmoke;
-                grid-area: parrafoPrinAbout;
             }
-    
-            .parrafoSecAbout {
-                font-family: 'Public Sans', sans-serif;
-                font-weight: bold;
-                color: whitesmoke;
-                grid-area: parrafoPrinAbout;
-                grid-area: parrafoSecAbout;
+            .parrafoSecAbout{
+                @extend .parrafoPrinAbout;
             }
-    
             .galeriaTeam {
                 grid-area: galeriaTeam;
                 display: flex;

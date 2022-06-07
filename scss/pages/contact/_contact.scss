@@ -15,6 +15,9 @@
                     .form{
                         margin-right: 2rem;
                         fieldset{
+                            legend{
+                                font-family: $funteTitulos;
+                            }
                             .formCamp{
                                 display: flex;
                                 flex-direction: column;
@@ -28,17 +31,13 @@
                     }
                     .formCamp {
                         input{
-                            border-radius: 30px;
-                            margin-bottom: 10px;
-                            padding-left: 0.5rem;
+                            @include Campos(30px,10px,0.5rem);
     
                         }
 
      
                         textarea{
-                            border-radius: 30px;
-                            margin-bottom: 10px;
-                            padding-left: 1.1rem;
+                            @include Campos(30px,10px,1rem);
                             padding-top: 1rem;
                         }
                         label{
