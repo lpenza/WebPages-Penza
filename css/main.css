@@ -426,12 +426,7 @@ body .capa {
   .mainCustomer .contenedorCustomer .tituloCustomer {
     font-size: 2rem; }
   .mainCustomer .contenedorCustomer .galeriaCustomer .card {
-    width: 15rem; }
-  /* contact */
-  .formBotones {
-    flex-direction: column; }
-    .formBotones input {
-      margin-bottom: 1rem; } }
+    width: 15rem; } }
 
 /* Desde 768 */
 @media screen and (min-width: 768px) {
