@@ -1,0 +1,6 @@
+@mixin Campos($radius,$margin-bottom,$padding-left) {
+    border-radius:$radius;
+    margin-bottom:$margin-bottom;
+    padding-left: $padding-left;
+    
+}

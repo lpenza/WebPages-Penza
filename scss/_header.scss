@@ -1,7 +1,9 @@
 header {
     .navbar {
-        width: 100%;
-        background: linear-gradient(90deg, #3a489e 0%, #6686c4 100%);
+        // width: 100%;
+        // background: linear-gradient(90deg, #3a489e 0%, #6686c4 100%);
+        width:map-get($map: $estiloHeader, $key:size);
+        background:map-get($map:$estiloHeader, $key:bg);
         .container-fluid {
             .logo {
                 img{

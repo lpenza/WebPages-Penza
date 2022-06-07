@@ -80,7 +80,7 @@ footer {
     align-self: flex-start;
     margin-left: 6rem;
     margin-bottom: 3rem;
-    font-family: 'Paytone One', sans-serif;
+    font-family: "Paytone One", sans-serif;
     font-weight: bold;
     color: whitesmoke; }
 
@@ -88,7 +88,7 @@ footer {
   margin-top: 6rem;
   min-height: 95vh; }
   .mainService .contenedorService .tituloService {
-    font-family: 'Paytone One', sans-serif;
+    font-family: "Paytone One", sans-serif;
     font-weight: bold;
     color: whitesmoke;
     grid-area: tituloService; }
@@ -105,76 +105,73 @@ body .contenedorAbout {
   position: relative;
   z-index: 2;
   display: grid;
-  grid-template-areas: "header" "tituloAbout" "parrafoPrinAbout" "parrafoSecAbout" "galeriaTeam" "footer"; }
-  body .contenedorAbout .mainAbout .contenidoAbout {
-    background: rgba(58, 72, 158, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(6.5px);
-    -webkit-backdrop-filter: blur(6.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    padding: 2rem;
-    margin-bottom: 2rem;
-    max-height: 50vh;
-    overflow: auto;
-    position: relative; }
-  body .contenedorAbout .mainAbout .tituloAbout {
-    font-family: 'Paytone One', sans-serif;
-    font-weight: bold;
-    color: whitesmoke;
-    grid-area: tituloAbout; }
-  body .contenedorAbout .mainAbout .parrafoPrinAbout {
-    font-family: 'Public Sans', sans-serif;
-    font-weight: bold;
-    color: whitesmoke;
-    grid-area: parrafoPrinAbout; }
-  body .contenedorAbout .mainAbout .parrafoSecAbout {
-    font-family: 'Public Sans', sans-serif;
-    font-weight: bold;
-    color: whitesmoke;
-    grid-area: parrafoPrinAbout;
-    grid-area: parrafoSecAbout; }
-  body .contenedorAbout .mainAbout .galeriaTeam {
-    grid-area: galeriaTeam;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background: rgba(58, 72, 158, 0.2);
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(6.5px);
-    -webkit-backdrop-filter: blur(6.5px);
-    border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    height: 10rem;
-    overflow-x: auto; }
-    body .contenedorAbout .mainAbout .galeriaTeam .imgGaleria {
-      background: linear-gradient(45deg, gold, fuchsia);
-      border-radius: 100%;
+  grid-template-areas: "header" "mainAbout" "footer"; }
+  body .contenedorAbout .mainAbout {
+    grid-area: mainAbout; }
+    body .contenedorAbout .mainAbout .contenidoAbout {
+      margin-top: 2rem;
+      background: rgba(58, 72, 158, 0.2);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(6.5px);
+      -webkit-backdrop-filter: blur(6.5px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      max-height: 50vh;
+      overflow: auto;
+      position: relative; }
+    body .contenedorAbout .mainAbout .tituloAbout {
+      margin-left: 1rem;
+      font-family: "Paytone One", sans-serif;
+      font-weight: bold;
+      color: whitesmoke;
+      grid-area: tituloAbout; }
+    body .contenedorAbout .mainAbout .parrafoPrinAbout, body .contenedorAbout .mainAbout .parrafoSecAbout {
+      font-family: 'Public Sans', sans-serif;
+      font-weight: bold;
+      color: whitesmoke; }
+    body .contenedorAbout .mainAbout .galeriaTeam {
+      grid-area: galeriaTeam;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 4px;
-      width: 88px;
-      height: 88px;
-      margin: 20px; }
-      body .contenedorAbout .mainAbout .galeriaTeam .imgGaleria:hover {
-        transform: scale(1.1); }
-      body .contenedorAbout .mainAbout .galeriaTeam .imgGaleria img {
-        position: relative;
-        bottom: -14px;
-        align-self: center;
-        width: 80px;
-        height: 80px;
-        margin: 30px;
+      flex-wrap: wrap;
+      align-items: center;
+      background: rgba(58, 72, 158, 0.2);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(6.5px);
+      -webkit-backdrop-filter: blur(6.5px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      height: 10rem;
+      overflow-x: auto; }
+      body .contenedorAbout .mainAbout .galeriaTeam .imgGaleria {
+        background: linear-gradient(45deg, gold, fuchsia);
         border-radius: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         padding: 4px;
-        background-color: whitesmoke; }
-      body .contenedorAbout .mainAbout .galeriaTeam .imgGaleria h2 {
-        text-align: center;
-        color: whitesmoke;
-        font-family: 'Roboto', sans-serif;
-        font-weight: bold;
-        font-size: medium; }
+        width: 88px;
+        height: 88px;
+        margin: 20px; }
+        body .contenedorAbout .mainAbout .galeriaTeam .imgGaleria:hover {
+          transform: scale(1.1); }
+        body .contenedorAbout .mainAbout .galeriaTeam .imgGaleria img {
+          position: relative;
+          bottom: -14px;
+          align-self: center;
+          width: 80px;
+          height: 80px;
+          margin: 30px;
+          border-radius: 100%;
+          padding: 4px;
+          background-color: whitesmoke; }
+        body .contenedorAbout .mainAbout .galeriaTeam .imgGaleria h2 {
+          text-align: center;
+          color: whitesmoke;
+          font-family: 'Roboto', sans-serif;
+          font-weight: bold;
+          font-size: medium; }
 
 body .videoTeam {
   position: absolute;
@@ -199,7 +196,7 @@ body .capa {
   min-height: 100vh;
   grid-template-areas: "tituloCustomer" "contenedorGaleriaCustomer" "footer"; }
   .mainCustomer .contenedorCustomer .tituloCustomer {
-    font-family: 'Paytone One', sans-serif;
+    font-family: "Paytone One", sans-serif;
     font-weight: bold;
     color: whitesmoke;
     grid-area: tituloCustomer; }
@@ -238,6 +235,8 @@ body .capa {
         width: 96vw; }
         .mainContact .contenedorContact .container-fluid .row .form {
           margin-right: 2rem; }
+          .mainContact .contenedorContact .container-fluid .row .form fieldset legend {
+            font-family: "Paytone One", sans-serif; }
           .mainContact .contenedorContact .container-fluid .row .form fieldset .formCamp {
             display: flex;
             flex-direction: column; }
@@ -248,7 +247,7 @@ body .capa {
         .mainContact .contenedorContact .container-fluid .row .formCamp textarea {
           border-radius: 30px;
           margin-bottom: 10px;
-          padding-left: 1.1rem;
+          padding-left: 1rem;
           padding-top: 1rem; }
         .mainContact .contenedorContact .container-fluid .row .formCamp label {
           position: relative;
@@ -317,8 +316,7 @@ body .capa {
         display: none; }
   /* ABOUT */
   .contenedorAbout {
-    min-height: 80vh;
-    grid-template-areas: "header" "tituloAbout" "parrafoPrinAbout" "parrafoSecAbout" "galeriaTeam"; }
+    min-height: 80vh; }
     .contenedorAbout .mainAbout {
       margin-bottom: 0; }
       .contenedorAbout .mainAbout .galeriaTeam .imgGaleriaOcultar {
@@ -426,12 +424,7 @@ body .capa {
   .mainCustomer .contenedorCustomer .tituloCustomer {
     font-size: 2rem; }
   .mainCustomer .contenedorCustomer .galeriaCustomer .card {
-    width: 15rem; }
-  /* contact */
-  .formBotones {
-    flex-direction: column; }
-    .formBotones input {
-      margin-bottom: 1rem; } }
+    width: 15rem; } }
 
 /* Desde 768 */
 @media screen and (min-width: 768px) {
