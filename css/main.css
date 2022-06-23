@@ -39,6 +39,7 @@ header .navbar {
           transform: scale(1.1); }
 
 footer {
+  min-width: 100%;
   grid-area: footer;
   display: flex;
   justify-content: space-between;
@@ -268,7 +269,8 @@ body .capa {
           margin-bottom: 10px; }
         .mainContact .contenedorContact .container-fluid .row .formBotones {
           display: flex;
-          margin-top: 2rem; }
+          margin-top: 2rem;
+          margin-bottom: 15rem; }
           .mainContact .contenedorContact .container-fluid .row .formBotones input {
             background-color: #C4DDFF;
             border-radius: 20px;
@@ -296,7 +298,14 @@ body .capa {
     width: 18rem;
     margin: 0; }
   footer {
-    display: none; }
+    display: flex; }
+    footer a {
+      position: relative;
+      top: -6px; }
+    footer .copy {
+      align-self: flex-end; }
+      footer .copy .copySpan {
+        display: none; }
   .mainService .contenedorService {
     margin-top: 8rem; }
     .mainService .contenedorService .tituloService {
@@ -354,7 +363,14 @@ body .capa {
       width: 18rem;
       margin: 0; }
   footer {
-    display: none; }
+    display: flex; }
+    footer a {
+      position: relative;
+      top: -6px; }
+    footer .copy {
+      align-self: flex-end; }
+      footer .copy .copySpan {
+        display: none; }
   /* Services */
   .mainService .contenedorService {
     margin-top: 8rem; }
@@ -380,7 +396,8 @@ body .capa {
     margin-right: 2rem; }
     .mainAbout .galeriaTeam {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      margin-bottom: 1rem; }
       .mainAbout .galeriaTeam .imgGaleriaOcultar {
         display: none; }
   /* Customer */
@@ -415,6 +432,8 @@ body .capa {
     width: 30rem; }
   footer {
     display: flex; }
+    footer .copy .copySpan {
+      display: inline-block; }
   /* About */
   .mainAbout .galeriaTeam {
     margin-bottom: 6rem; }

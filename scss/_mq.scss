@@ -20,9 +20,26 @@
 
 
     }
+    footer{
+        display: flex;
+        a{
+            
+            position: relative;
+            top:-6px;
+        }
 
-    footer {
-        display: none;
+        .copy{
+          
+            align-self: flex-end;
+
+            .copySpan {
+                display: none;     
+            }
+
+        }
+     
+
+      
     }
 
     .mainService {
@@ -154,9 +171,28 @@
         }
     }
 
-    footer {
-        display: none;
+    footer{
+        display: flex;
+        a{
+            
+            position: relative;
+            top:-6px;
+        }
+
+        .copy{
+          
+            align-self: flex-end;
+
+            .copySpan {
+                display: none;     
+            }
+
+        }
+     
+
+      
     }
+    
 
     /* Services */
     .mainService {
@@ -213,6 +249,7 @@
         .galeriaTeam {
             display: flex;
             flex-direction: column;
+            margin-bottom: 1rem;
 
             .imgGaleriaOcultar {
                 display: none;
@@ -285,6 +322,14 @@
 
     footer {
         display: flex;
+        .copy{
+
+            .copySpan{
+                display: inline-block;
+            }
+
+        }
+        
 
     }
 
